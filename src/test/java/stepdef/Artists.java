@@ -31,20 +31,20 @@ import pages.updateArtist;
 public class Artists {
 	
 	private static WebDriver driver;
-	private static ExtentReports extent;
-	private static ExtentTest test;
+//	private static ExtentReports extent;
+//	private static ExtentTest test;
 
 	
-	
-    private static Logger LOGGER = Logger.getGlobal();
+//	
+//    private static Logger LOGGER = Logger.getGlobal();
 	
     
     @Before
 	public static void init() {
 		
 		
-		extent = new ExtentReports("src/test/resources/reports/Extentreport.html", true);
-		test = extent.startTest("Choonz project Testing");;
+//		extent = new ExtentReports("src/test/resources/reports/Extentreport.html", true);
+//		test = extent.startTest("Choonz project Testing");
 		
 		System.setProperty("webdriver.chrome.driver", 
 				"src/test/resources/drivers/chromedriver.exe");
@@ -63,9 +63,9 @@ public class Artists {
 	@After
 	public static void tearDown() {
 		driver.quit();
-		extent.endTest(test);
-		extent.flush();
-		extent.close();
+//		extent.endTest(test);
+//		extent.flush();
+//		extent.close();
 		
 	}
 	
@@ -73,7 +73,6 @@ public class Artists {
 	
 	@Given("^I can access the Artists page$")
 	public void i_can_access_the_Artists_page() throws Throwable {
-		System.out.println("connecting to artist page");
 		driver.get("http://localhost:8082/html/artists.html");
 		Helper.snapShot(driver, "src/test/resources/reports/createArtist/shot1.png");
 
@@ -82,7 +81,6 @@ public class Artists {
 	@When("^I enter Artists details$")
 	public void i_enter_Artists_details() throws Throwable {
 		createArtist artist = PageFactory.initElements(driver, createArtist.class);
-		System.out.println("entering details");
 		artist.createAnArtist("artiststest");
 		Helper.snapShot(driver, "src/test/resources/reports/createArtist/shot2.png");
 
@@ -91,7 +89,6 @@ public class Artists {
 	@Then("^i can create an Artists entry$")
 	public void i_can_create_an_Artists_entry() throws Throwable {
 		createArtist artist = PageFactory.initElements(driver, createArtist.class);
-		System.out.println("clicking create");
 		artist.createclick();
 		Helper.snapShot(driver, "src/test/resources/reports/createArtist/shot3.png");
 		Thread.sleep(1000);
@@ -148,30 +145,30 @@ public class Artists {
 
 	@Given("^I can access the Artists view one page$")
 	public void i_can_access_the_Artists_view_one_page() throws Throwable {
-		System.out.println("connecting to artist page");
-		driver.get("http://localhost:8082/html/artist.html?id=1");
+		driver.get("http://localhost:8082/html/artists.html");
 		Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot1.png");
+		createArtist artist = PageFactory.initElements(driver, createArtist.class);
+		artist.viewclick();
+		Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot2.png");
 
 	}
 
 	@When("^I enter new Artists details$")
 	public void i_enter_new_Artists_details() throws Throwable {
 		updateArtist artist = PageFactory.initElements(driver, updateArtist.class);
-		System.out.println("entering details");
 		artist.updateanAlbum("update");
-		Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot2.png");
+		Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot3.png");
 
 	}
 
 	@Then("^i can update that Artists entry$")
 	public void i_can_update_that_Artists_entry() throws Throwable {
 		updateArtist artist = PageFactory.initElements(driver, updateArtist.class);
-		System.out.println("clicking update");
 		artist.updateclick();
-		Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot3.png");
+		Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot4.png");
 		Thread.sleep(1000);
 		driver.navigate().refresh();
-    	Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot4.png");
+    	Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot5.png");
     	Thread.sleep(1000);
     	
     	boolean expected;
@@ -181,6 +178,8 @@ public class Artists {
 	
 	       
        assertEquals(expected, result);
+       driver.get("http://localhost:8082/html/artists.html");
+		Helper.snapShot(driver, "src/test/resources/reports/updateartist/shot6.png");
 
 	}
 
@@ -188,15 +187,22 @@ public class Artists {
 	public void i_click_on_delete_Artists_button() throws Throwable {
 		Helper.snapShot(driver, "src/test/resources/reports/deleteartist/shot1.png");
 		createArtist artist = PageFactory.initElements(driver, createArtist.class);
-		System.out.println("clicking delete");
-		artist.deleteclick();
+		artist.viewclick();
+		Helper.snapShot(driver, "src/test/resources/reports/deleteartist/shot2.png");
+
 
 	}
 
 	@Then("^i can delete that Artists entry$")
 	public void i_can_delete_that_Artists_entry() throws Throwable {
+		updateArtist artist = PageFactory.initElements(driver, updateArtist.class);
+		artist.deleteclick();
 		driver.navigate().refresh();
-    	Helper.snapShot(driver, "src/test/resources/reports/deleteartist/shot2.png");
+    	Helper.snapShot(driver, "src/test/resources/reports/deleteartist/shot3.png");
+    	
+    	
+    	driver.get("http://localhost:8082/html/artists.html");
+    	Helper.snapShot(driver, "src/test/resources/reports/deleteartist/shot4.png");
     	Thread.sleep(1000);
     	
     	String expected = "http://localhost:8082/html/artists.html";

@@ -31,20 +31,20 @@ import pages.updateAlbum;
 public class Albums {
 	
 	private static WebDriver driver;
-	private static ExtentReports extent;
-	private static ExtentTest test;
+//	private static ExtentReports extent;
+//	private static ExtentTest test;
 
 	
 	
-    private static Logger LOGGER = Logger.getGlobal();
+//    private static Logger LOGGER = Logger.getGlobal();
 	
     
     @Before
 	public static void init() {
 		
 		
-		extent = new ExtentReports("src/test/resources/reports/Extentreport.html", true);
-		test = extent.startTest("Choonz project Testing");;
+//		extent = new ExtentReports("src/test/resources/reports/Extentreport.html", true);
+//		test = extent.startTest("Choonz project Testing");;
 		
 		System.setProperty("webdriver.chrome.driver", 
 				"src/test/resources/drivers/chromedriver.exe");
@@ -63,9 +63,9 @@ public class Albums {
 	@After
 	public static void tearDown() {
 		driver.quit();
-		extent.endTest(test);
-		extent.flush();
-		extent.close();
+//		extent.endTest(test);
+//		extent.flush();
+//		extent.close();
 		
 	}
 	
@@ -110,11 +110,6 @@ public class Albums {
 	       
        assertEquals(expected, result);
        
-//   	if ((expected = true) && (result = true)) {
-//			test.log(LogStatus.PASS, "Success album created");
-//		} else {
-//			test.log(LogStatus.FAIL, "Failed");
-//		}
 
 
 	}
@@ -128,10 +123,6 @@ public class Albums {
 	
 	       
        assertEquals(expected, result);
-       
-
-       
-
 
 	}
 	
@@ -160,30 +151,30 @@ public class Albums {
 	
 	@Given("^I can access the albums view one page$")
 	public void i_can_access_the_albums_view_one_page() throws Throwable {
-		System.out.println("connecting to album page");
-		driver.get("http://localhost:8082/html/album.html?id=1");
+		driver.get("http://localhost:8082/html/albums.html");
 		Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot1.png");
+		createAlbum album = PageFactory.initElements(driver, createAlbum.class);
+		album.viewclick();
+		Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot2.png");
 
 	}
 
 	@When("^I enter new album details$")
 	public void i_enter_new_album_details() throws Throwable {
 		updateAlbum album = PageFactory.initElements(driver, updateAlbum.class);
-		System.out.println("entering details");
 		album.updateanAlbum("update", "function");
-		Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot2.png");
+		Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot3.png");
 
 	}
 
 	@Then("^i can update that albums entry$")
 	public void i_can_update_that_albums_entry() throws Throwable {
 		updateAlbum album = PageFactory.initElements(driver, updateAlbum.class);
-		System.out.println("clicking update");
 		album.updateclick();
-		Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot3.png");
+		Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot4.png");
 		Thread.sleep(1000);
 		driver.navigate().refresh();
-    	Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot4.png");
+    	Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot5.png");
     	Thread.sleep(1000);
     	
     	boolean expected;
@@ -193,6 +184,10 @@ public class Albums {
 	
 	       
        assertEquals(expected, result);
+		driver.get("http://localhost:8082/html/albums.html");
+		Helper.snapShot(driver, "src/test/resources/reports/updatealbum/shot6.png");
+       
+
 
 	}
 	
@@ -200,17 +195,23 @@ public class Albums {
 	public void i_click_on_delete_album_button() throws Throwable {
 		Helper.snapShot(driver, "src/test/resources/reports/deletealbum/shot1.png");
 		createAlbum album = PageFactory.initElements(driver, createAlbum.class);
-		System.out.println("clicking update");
-		album.deleteclick();
+		album.viewclick();
+		Helper.snapShot(driver, "src/test/resources/reports/deletealbum/shot2.png");
 
 	}
 
 	@Then("^i can delete that albums entry$")
-	public void i_can_delete_that_albums_entry() throws Throwable {
-		
+	public void i_can_delete_that_albums_entry() throws Throwable {		
+		updateAlbum album = PageFactory.initElements(driver, updateAlbum.class);
+		album.deleteclick();
 		driver.navigate().refresh();
-    	Helper.snapShot(driver, "src/test/resources/reports/deletealbum/shot2.png");
+		Helper.snapShot(driver, "src/test/resources/reports/deletealbum/shot3.png");
+		
+		
+		driver.get("http://localhost:8082/html/albums.html");
+		Helper.snapShot(driver, "src/test/resources/reports/deletealbum/shot4.png");
     	Thread.sleep(1000);
+
     	
     	String expected = "http://localhost:8082/html/albums.html";
 	     String result = driver.getCurrentUrl();

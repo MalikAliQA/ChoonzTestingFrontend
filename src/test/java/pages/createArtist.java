@@ -14,8 +14,6 @@ public class createArtist {
 	@FindBy(css = "#main > div:nth-child(1) > input[type=button]")
 	WebElement viewone;
 	
-	@FindBy(css = "#main > div:nth-child(1) > button")
-	WebElement delete;
 	
 	
 	public void createAnArtist(String name) {
@@ -34,9 +32,6 @@ public class createArtist {
 		viewone.click();
 	}
 	
-	public void deleteclick() {
-
-		delete.click();
-	}
+	
 
 }

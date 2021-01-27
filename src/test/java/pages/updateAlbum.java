@@ -14,6 +14,9 @@ public class updateAlbum {
 	@FindBy(css = "#update")
 	WebElement updatealbum;
 	
+	@FindBy(css = "#main > div > button")
+	WebElement delete;
+	
 	
 	public void updateanAlbum(String name, String cover) {
 		albumname.clear();
@@ -26,6 +29,11 @@ public class updateAlbum {
 	public void updateclick() {
 
 		updatealbum.click();
+	}
+	
+	public void deleteclick() {
+
+		delete.click();
 	}
 
 }

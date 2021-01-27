@@ -23,6 +23,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import helper.Helper;
+import pages.createAlbum;
 import pages.createArtist;
 import pages.createGenre;
 import pages.updateArtist;
@@ -31,20 +32,20 @@ import pages.updateGenre;
 public class Genres {
 	
 	private static WebDriver driver;
-	private static ExtentReports extent;
-	private static ExtentTest test;
+//	private static ExtentReports extent;
+//	private static ExtentTest test;
 
 	
 	
-    private static Logger LOGGER = Logger.getGlobal();
+//    private static Logger LOGGER = Logger.getGlobal();
 	
     
     @Before
 	public static void init() {
 		
 		
-		extent = new ExtentReports("src/test/resources/reports/Extentreport.html", true);
-		test = extent.startTest("Choonz project Testing");;
+//		extent = new ExtentReports("src/test/resources/reports/Extentreport.html", true);
+//		test = extent.startTest("Choonz project Testing");
 		
 		System.setProperty("webdriver.chrome.driver", 
 				"src/test/resources/drivers/chromedriver.exe");
@@ -63,9 +64,9 @@ public class Genres {
 	@After
 	public static void tearDown() {
 		driver.quit();
-		extent.endTest(test);
-		extent.flush();
-		extent.close();
+//		extent.endTest(test);
+//		extent.flush();
+//		extent.close();
 		
 	}
 	
@@ -73,7 +74,6 @@ public class Genres {
 	
 	@Given("^I can access the genres page$")
 	public void i_can_access_the_genres_page() throws Throwable {
-		System.out.println("connecting to artist page");
 		driver.get("http://localhost:8082/html/genres.html");
 		Helper.snapShot(driver, "src/test/resources/reports/createGenre/shot1.png");
 
@@ -82,7 +82,6 @@ public class Genres {
 	@When("^I enter genres details$")
 	public void i_enter_genres_details() throws Throwable {
 		createGenre genre = PageFactory.initElements(driver, createGenre.class);
-		System.out.println("entering details");
 		genre.createAGenre("genre", "creation");
 		Helper.snapShot(driver, "src/test/resources/reports/createGenre/shot2.png");
 
@@ -91,7 +90,6 @@ public class Genres {
 	@Then("^i can create an genres entry$")
 	public void i_can_create_an_genres_entry() throws Throwable {
 		createGenre genre = PageFactory.initElements(driver, createGenre.class);
-		System.out.println("clicking create");
 		genre.createclick();
 		Helper.snapShot(driver, "src/test/resources/reports/createGenre/shot3.png");
 		Thread.sleep(1000);
@@ -145,30 +143,30 @@ public class Genres {
 
 	@Given("^I can access the genres view one page$")
 	public void i_can_access_the_genres_view_one_page() throws Throwable {
-		System.out.println("connecting to genre page");
-		driver.get("http://localhost:8082/html/genre.html?id=1");
+		driver.get("http://localhost:8082/html/genres.html");
 		Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot1.png");
+		createGenre genre = PageFactory.initElements(driver, createGenre.class);
+		genre.viewclick();
+		Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot2.png");
 
 	}
 
 	@When("^I enter new genres details$")
 	public void i_enter_new_genres_details() throws Throwable {
 		updateGenre genre = PageFactory.initElements(driver, updateGenre.class);
-		System.out.println("entering details");
 		genre.updateaGenre("update", "function");
-		Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot2.png");
+		Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot3.png");
 
 	}
 
 	@Then("^i can update that genres entry$")
 	public void i_can_update_that_genres_entry() throws Throwable {
-		updateArtist artist = PageFactory.initElements(driver, updateArtist.class);
-		System.out.println("clicking update");
-		artist.updateclick();
-		Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot3.png");
+		updateGenre genre = PageFactory.initElements(driver, updateGenre.class);
+		genre.updateclick();
+		Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot4.png");
 		Thread.sleep(1000);
 		driver.navigate().refresh();
-    	Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot4.png");
+    	Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot5.png");
     	Thread.sleep(1000);
     	
     	boolean expected;
@@ -178,20 +176,28 @@ public class Genres {
 	
 	       
        assertEquals(expected, result);
+       driver.get("http://localhost:8082/html/genres.html");
+       Helper.snapShot(driver, "src/test/resources/reports/updateGenre/shot6.png");
 	}
 
 	@When("^I click on delete genres button$")
 	public void i_click_on_delete_genres_button() throws Throwable {
 		Helper.snapShot(driver, "src/test/resources/reports/deleteGenre/shot1.png");
 		createGenre genre = PageFactory.initElements(driver, createGenre.class);
-		System.out.println("clicking delete");
-		genre.deleteclick();
+		genre.viewclick();
+		Helper.snapShot(driver, "src/test/resources/reports/deleteGenre/shot2.png");
+		
 	}
 
 	@Then("^i can delete that genres entry$")
 	public void i_can_delete_that_genres_entry() throws Throwable {
+		updateGenre genre = PageFactory.initElements(driver, updateGenre.class);
+		genre.deleteclick();
 		driver.navigate().refresh();
-    	Helper.snapShot(driver, "src/test/resources/reports/deleteGenre/shot2.png");
+    	Helper.snapShot(driver, "src/test/resources/reports/deleteGenre/shot3.png");
+    	
+    	driver.get("http://localhost:8082/html/genres.html");
+		Helper.snapShot(driver, "src/test/resources/reports/deleteGenre/shot4.png");
     	Thread.sleep(1000);
     	
     	String expected = "http://localhost:8082/html/genres.html";

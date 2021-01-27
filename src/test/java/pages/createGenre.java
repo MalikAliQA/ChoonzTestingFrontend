@@ -18,15 +18,12 @@ public class createGenre {
 	@FindBy(css = "#main > div:nth-child(1) > input[type=button]")
 	WebElement viewone;
 	
-	@FindBy(css = "#main > div:nth-child(1) > button")
-	WebElement delete;
 	
 	
 	public void createAGenre(String name, String description) {
 		genrename.sendKeys(name);
 		genredescription.sendKeys(description);
 
-		//createalbum.click();
 	}
 	
 	public void createclick() {
@@ -39,9 +36,5 @@ public class createGenre {
 		viewone.click();
 	}
 	
-	public void deleteclick() {
-
-		delete.click();
-	}
 
 }

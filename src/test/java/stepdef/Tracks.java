@@ -31,20 +31,20 @@ import pages.updateTrack;
 public class Tracks {
 	
 	private static WebDriver driver;
-	private static ExtentReports extent;
-	private static ExtentTest test;
+//	private static ExtentReports extent;
+//	private static ExtentTest test;
 
 	
 	
-    private static Logger LOGGER = Logger.getGlobal();
+//    private static Logger LOGGER = Logger.getGlobal();
 	
     
     @Before
 	public static void init() {
 		
 		
-		extent = new ExtentReports("src/test/resources/reports/Extentreport.html", true);
-		test = extent.startTest("Choonz project Testing");;
+//		extent = new ExtentReports("src/test/resources/reports/Extentreport.html", true);
+//		test = extent.startTest("Choonz project Testing");
 		
 		System.setProperty("webdriver.chrome.driver", 
 				"src/test/resources/drivers/chromedriver.exe");
@@ -63,9 +63,9 @@ public class Tracks {
 	@After
 	public static void tearDown() {
 		driver.quit();
-		extent.endTest(test);
-		extent.flush();
-		extent.close();
+//		extent.endTest(test);
+//		extent.flush();
+//		extent.close();
 		
 	}
 	
@@ -85,7 +85,6 @@ public class Tracks {
 	@Then("^i can create an tracks entry$")
 	public void i_can_create_an_tracks_entry() throws Throwable {
 		createTrack track = PageFactory.initElements(driver, createTrack.class);
-		System.out.println("clicking create");
 		track.createclick();
 		Helper.snapShot(driver, "src/test/resources/reports/createTrack/shot3.png");
 		Thread.sleep(1000);
@@ -140,25 +139,28 @@ public class Tracks {
 
 	@Given("^I can access the tracks view one page$")
 	public void i_can_access_the_tracks_view_one_page() throws Throwable {
-		driver.get("http://localhost:8082/html/track.html?id=1");
+		driver.get("http://localhost:8082/html/tracks.html");
 		Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot1.png");
+		createTrack track = PageFactory.initElements(driver, createTrack.class);
+		track.viewclick();
+		Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot2.png");
 	}
 
 	@When("^I enter new tracks details$")
 	public void i_enter_new_tracks_details() throws Throwable {
 		updateTrack track = PageFactory.initElements(driver, updateTrack.class);
 		track.updateaTrack("update", 1, "function");
-		Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot2.png");
+		Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot3.png");
 	}
 
 	@Then("^i can update that tracks entry$")
 	public void i_can_update_that_tracks_entry() throws Throwable {
 		updateTrack track = PageFactory.initElements(driver, updateTrack.class);
 		track.updateclick();
-		Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot3.png");
+		Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot4.png");
 		Thread.sleep(1000);
 		driver.navigate().refresh();
-    	Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot4.png");
+    	Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot5.png");
     	Thread.sleep(1000);
     	
     	boolean expected;
@@ -168,19 +170,28 @@ public class Tracks {
 	
 	       
        assertEquals(expected, result);
+       driver.get("http://localhost:8082/html/albums.html");
+		Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot6.png");
 	}
 
 	@When("^I click on delete tracks button$")
 	public void i_click_on_delete_tracks_button() throws Throwable {
 		Helper.snapShot(driver, "src/test/resources/reports/deleteTrack/shot1.png");
 		createTrack track = PageFactory.initElements(driver, createTrack.class);
-		track.deleteclick();
+		track.viewclick();
+		Helper.snapShot(driver, "src/test/resources/reports/deleteTrack/shot2.png");
+
 	}
 
 	@Then("^i can delete that tracks entry$")
 	public void i_can_delete_that_tracks_entry() throws Throwable {
+		updateTrack track = PageFactory.initElements(driver, updateTrack.class);
+		track.deleteclick();
 		driver.navigate().refresh();
-    	Helper.snapShot(driver, "src/test/resources/reports/deleteTrack/shot2.png");
+    	Helper.snapShot(driver, "src/test/resources/reports/deleteTrack/shot3.png");
+    	
+		driver.get("http://localhost:8082/html/tracks.html");
+		Helper.snapShot(driver, "src/test/resources/reports/deleteTrack/shot4.png");
     	Thread.sleep(1000);
     	
     	String expected = "http://localhost:8082/html/tracks.html";

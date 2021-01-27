@@ -25,6 +25,9 @@ public class updateTrack {
 	
 	@FindBy(css = "#update")
 	WebElement updatetrack;
+	
+	@FindBy(css = "#main > div > button")
+	WebElement delete;
 
 	
 	
@@ -48,6 +51,12 @@ public class updateTrack {
 
 		updatetrack.click();
 	}
+	
+	public void deleteclick() {
+
+		delete.click();
+	}
+	
 	
 	
 
