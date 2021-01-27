@@ -28,9 +28,7 @@ public class createTrack {
 	
 	@FindBy(css = "#test > input[type=button]")
 	WebElement viewone;
-	
-	@FindBy(css = "#test > button")
-	WebElement delete;
+
 	
 	
 	public void createATrack(String name, int duration, String lyrics, int albumID, int genreID, int playlistID) {
@@ -53,10 +51,7 @@ public class createTrack {
 		viewone.click();
 	}
 	
-	public void deleteclick() {
 
-		delete.click();
-	}
 	
 
 }

@@ -21,8 +21,6 @@ public class createAlbum {
 	@FindBy(css = "#\\31  > input[type=button]")
 	WebElement viewone;
 	
-	@FindBy(css = "#\\31  > button")
-	WebElement delete;
 	
 	
 	public void createAnAlbum(String name, String cover, int artist) {
@@ -42,10 +40,7 @@ public class createAlbum {
 		viewone.click();
 	}
 	
-	public void deleteclick() {
 
-		delete.click();
-	}
 	
 	
 }

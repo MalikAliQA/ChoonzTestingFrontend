@@ -14,6 +14,9 @@ public class updateGenre {
 	@FindBy(css = "#update")
 	WebElement updategenre;
 	
+	@FindBy(css = "#main > div > button")
+	WebElement delete;
+	
 	
 	public void updateaGenre(String name, String description) {
 		genrename.clear();
@@ -26,6 +29,11 @@ public class updateGenre {
 	public void updateclick() {
 
 		updategenre.click();
+	}
+	
+	public void deleteclick() {
+
+		delete.click();
 	}
 
 }
