@@ -170,7 +170,7 @@ public class Tracks {
 	
 	       
        assertEquals(expected, result);
-       driver.get("http://localhost:8082/html/albums.html");
+       driver.get("http://localhost:8082/html/tracks.html");
 		Helper.snapShot(driver, "src/test/resources/reports/updateTrack/shot6.png");
 	}
 
