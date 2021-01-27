@@ -16,7 +16,7 @@ public class updateArtist {
 	WebElement delete;
 	
 	
-	public void updateanAlbum(String name) {
+	public void updateanArtist(String name) {
 		artistname.clear();
 		artistname.sendKeys(name);
 
