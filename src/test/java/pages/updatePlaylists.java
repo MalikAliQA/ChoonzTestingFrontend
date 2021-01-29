@@ -20,7 +20,8 @@ public class updatePlaylists {
 	@FindBy(css = "#delete")
 	WebElement delete;
 	
-	@FindBy(css = "#tracks > div:nth-child(1) > input[type=button]")
+	@FindBy(css = "#tracks-container > div:nth-child(1) > input[type=button]")
+	
 	WebElement tracklink;
 	
 

@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5896806600,
+  "duration": 5935684600,
   "status": "passed"
 });
 formatter.scenario({
@@ -43,29 +43,29 @@ formatter.match({
   "location": "AllTests.i_go_to_the_login_page()"
 });
 formatter.result({
-  "duration": 3009324100,
+  "duration": 857121800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_the_user_name_and_passwird()"
 });
 formatter.result({
-  "duration": 845686700,
+  "duration": 854027300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_login()"
 });
 formatter.result({
-  "duration": 268711500,
+  "duration": 280252000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 576648900,
+  "duration": 579816100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5314860100,
+  "duration": 5319149300,
   "status": "passed"
 });
 formatter.scenario({
@@ -95,29 +95,30 @@ formatter.match({
   "location": "AllTests.i_can_logina()"
 });
 formatter.result({
-  "duration": 1136852900,
+  "duration": 1178549800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.when_i_click_logout()"
 });
 formatter.result({
-  "duration": 146449700,
+  "duration": 243131900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_am_logged_out()"
 });
 formatter.result({
-  "duration": 330946000,
-  "status": "passed"
+  "duration": 20818177200,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: body \u003e div \u003e form \u003e button (tried for 20 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat stepdef.AllTests.i_am_logged_out(AllTests.java:1101)\r\n\tat ✽.Then i am logged out(LoginLogout.feature:12)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"body \u003e div \u003e form \u003e button\"}\n  (Session info: headless chrome\u003d88.0.4324.104)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-24TH8E7N\u0027, ip: \u0027192.168.1.148\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\Malik\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 52aa6c9a7c14ac03facda4089756a55c\n*** Element info: {Using\u003dcss selector, value\u003dbody \u003e div \u003e form \u003e button}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat stepdef.AllTests.i_am_logged_out(AllTests.java:1101)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 589264000,
+  "duration": 579408400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5357879800,
+  "duration": 5333143600,
   "status": "passed"
 });
 formatter.scenario({
@@ -147,25 +148,25 @@ formatter.match({
   "location": "AllTests.i_can_go_to_the_register_page()"
 });
 formatter.result({
-  "duration": 408911600,
+  "duration": 405476700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_the_registration_details()"
 });
 formatter.result({
-  "duration": 525955600,
-  "status": "passed"
+  "duration": 3038141600,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#username\"}\n  (Session info: headless chrome\u003d88.0.4324.104)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-24TH8E7N\u0027, ip: \u0027192.168.1.148\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\Malik\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 9e08fc8db5a3504db8d9ef3be23f22dc\n*** Element info: {Using\u003dcss selector, value\u003d#username}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\r\n\tat pages.loginPage.reguser(loginPage.java:34)\r\n\tat stepdef.AllTests.i_enter_the_registration_details(AllTests.java:1119)\r\n\tat ✽.When i enter the registration details(LoginLogout.feature:16)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "AllTests.i_can_login_with_the_details()"
 });
 formatter.result({
-  "duration": 1575708500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 581254900,
+  "duration": 576407700,
   "status": "passed"
 });
 formatter.uri("albums.feature");
@@ -183,7 +184,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5330864800,
+  "duration": 5357368800,
   "status": "passed"
 });
 formatter.background({
@@ -212,21 +213,21 @@ formatter.match({
   "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 228357300,
+  "duration": 234839100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 409491900,
+  "duration": 347092300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 16279300,
+  "duration": 12556800,
   "status": "passed"
 });
 formatter.scenario({
@@ -256,29 +257,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_albums_page_from_the_artist()"
 });
 formatter.result({
-  "duration": 1011765100,
+  "duration": 1021608700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_album_details()"
 });
 formatter.result({
-  "duration": 411495300,
+  "duration": 404253200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_create_an_album_entry()"
 });
 formatter.result({
-  "duration": 998638600,
+  "duration": 992870700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 578526400,
+  "duration": 582033100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5322103100,
+  "duration": 5359082600,
   "status": "passed"
 });
 formatter.background({
@@ -307,21 +308,21 @@ formatter.match({
   "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 279729300,
+  "duration": 241265900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 409703800,
+  "duration": 407176200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 17317500,
+  "duration": 16609600,
   "status": "passed"
 });
 formatter.scenario({
@@ -346,22 +347,22 @@ formatter.match({
   "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 693383700,
+  "duration": 686299000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_all_the_album_entries()"
 });
 formatter.result({
-  "duration": 6308900,
+  "duration": 6892800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 582392500,
+  "duration": 577345800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5352024400,
+  "duration": 5323453000,
   "status": "passed"
 });
 formatter.background({
@@ -390,21 +391,21 @@ formatter.match({
   "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 272911200,
+  "duration": 260027400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 347323600,
+  "duration": 390725300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 15118400,
+  "duration": 13216100,
   "status": "passed"
 });
 formatter.scenario({
@@ -434,29 +435,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 687394700,
+  "duration": 693135000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_view_one_album()"
 });
 formatter.result({
-  "duration": 632357200,
+  "duration": 635726700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_that_albums_details()"
 });
 formatter.result({
-  "duration": 9748000,
+  "duration": 11111500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 583545600,
+  "duration": 586425500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5340891600,
+  "duration": 5321101900,
   "status": "passed"
 });
 formatter.background({
@@ -485,21 +486,21 @@ formatter.match({
   "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 282227400,
+  "duration": 256593800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 402486700,
+  "duration": 421042700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 7438300,
+  "duration": 18010500,
   "status": "passed"
 });
 formatter.scenario({
@@ -529,29 +530,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 757140500,
+  "duration": 682960500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_new_album_details()"
 });
 formatter.result({
-  "duration": 1272142200,
+  "duration": 1221870800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_update_that_albums_entry()"
 });
 formatter.result({
-  "duration": 763961700,
+  "duration": 727107800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 610689000,
+  "duration": 582936500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5315073600,
+  "duration": 5328448200,
   "status": "passed"
 });
 formatter.background({
@@ -580,21 +581,21 @@ formatter.match({
   "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 270384500,
+  "duration": 517893700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 416231300,
+  "duration": 395354800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 26066900,
+  "duration": 32460600,
   "status": "passed"
 });
 formatter.scenario({
@@ -624,29 +625,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 688249400,
+  "duration": 686919400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_delete_album_button()"
 });
 formatter.result({
-  "duration": 987763600,
+  "duration": 993188500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_delete_that_albums_entry()"
 });
 formatter.result({
-  "duration": 6813700,
+  "duration": 4315600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 589235000,
+  "duration": 579699600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5400815900,
+  "duration": 5315346900,
   "status": "passed"
 });
 formatter.background({
@@ -675,21 +676,21 @@ formatter.match({
   "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 262930100,
+  "duration": 241085100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 372905900,
+  "duration": 385954700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 14222400,
+  "duration": 20489100,
   "status": "passed"
 });
 formatter.scenario({
@@ -719,29 +720,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 711108700,
+  "duration": 679791900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_the_artist_of_that_album()"
 });
 formatter.result({
-  "duration": 1000397300,
+  "duration": 1020406600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_am_taken_to_that_artists_page()"
 });
 formatter.result({
-  "duration": 11100300,
+  "duration": 9074200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 581032400,
+  "duration": 587297700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5349860000,
+  "duration": 5315075200,
   "status": "passed"
 });
 formatter.background({
@@ -770,21 +771,21 @@ formatter.match({
   "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 772787200,
+  "duration": 318246400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 398251400,
+  "duration": 423059300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 19140600,
+  "duration": 7753200,
   "status": "passed"
 });
 formatter.scenario({
@@ -814,29 +815,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 698604300,
+  "duration": 680986200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_a_track_in_that_album()"
 });
 formatter.result({
-  "duration": 1321485300,
-  "status": "passed"
+  "duration": 3705142000,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tracks \u003e div:nth-child(1) \u003e input[type\u003dbutton]\"}\n  (Session info: headless chrome\u003d88.0.4324.104)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-24TH8E7N\u0027, ip: \u0027192.168.1.148\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\Malik\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: e77afdc567a56da6574b1c9f3d2653d6\n*** Element info: {Using\u003dcss selector, value\u003d#tracks \u003e div:nth-child(1) \u003e input[type\u003dbutton]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepdef.AllTests.i_click_on_a_track_in_that_album(AllTests.java:252)\r\n\tat ✽.When I click on a track in that album(albums.feature:50)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "AllTests.i_am_taken_to_that_tracks_page()"
 });
 formatter.result({
-  "duration": 10167800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 584785400,
+  "duration": 578270900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5405056000,
+  "duration": 5335686800,
   "status": "passed"
 });
 formatter.background({
@@ -865,21 +866,21 @@ formatter.match({
   "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 285887600,
+  "duration": 267670700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 448381100,
+  "duration": 362475800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 18563100,
+  "duration": 7179300,
   "status": "passed"
 });
 formatter.scenario({
@@ -909,25 +910,25 @@ formatter.match({
   "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 718433900,
+  "duration": 683303500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_search_for_a_album()"
 });
 formatter.result({
-  "duration": 364369700,
+  "duration": 334447600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.only_that_albums_details_are_displayed()"
 });
 formatter.result({
-  "duration": 9768800,
+  "duration": 9006200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 577044900,
+  "duration": 574215700,
   "status": "passed"
 });
 formatter.uri("artists.feature");
@@ -945,7 +946,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5411339400,
+  "duration": 5342838400,
   "status": "passed"
 });
 formatter.background({
@@ -974,21 +975,21 @@ formatter.match({
   "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 242927700,
+  "duration": 236796700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 404724000,
+  "duration": 346786000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 14322900,
+  "duration": 11128600,
   "status": "passed"
 });
 formatter.scenario({
@@ -1018,29 +1019,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Artists_page()"
 });
 formatter.result({
-  "duration": 644471600,
+  "duration": 655686300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_Artists_details()"
 });
 formatter.result({
-  "duration": 332167700,
+  "duration": 339126100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_create_an_Artists_entry()"
 });
 formatter.result({
-  "duration": 620695000,
+  "duration": 634503000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 582976300,
+  "duration": 573144400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5338531500,
+  "duration": 5312476400,
   "status": "passed"
 });
 formatter.background({
@@ -1069,21 +1070,21 @@ formatter.match({
   "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 235387700,
+  "duration": 328893400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 362460600,
+  "duration": 364541700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 7370700,
+  "duration": 24215500,
   "status": "passed"
 });
 formatter.scenario({
@@ -1108,22 +1109,22 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Artists_page()"
 });
 formatter.result({
-  "duration": 658412600,
+  "duration": 644604200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_all_the_Artists_entries()"
 });
 formatter.result({
-  "duration": 269238100,
+  "duration": 272831600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 583541300,
+  "duration": 588911700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5316152700,
+  "duration": 5415170200,
   "status": "passed"
 });
 formatter.background({
@@ -1152,21 +1153,21 @@ formatter.match({
   "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 236575700,
+  "duration": 303354300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 376733100,
+  "duration": 411613900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 24286100,
+  "duration": 17274200,
   "status": "passed"
 });
 formatter.scenario({
@@ -1196,29 +1197,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Artists_page()"
 });
 formatter.result({
-  "duration": 637467600,
+  "duration": 620858100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_view_one_Artists()"
 });
 formatter.result({
-  "duration": 631854200,
+  "duration": 640668100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_that_Artists_details()"
 });
 formatter.result({
-  "duration": 12698500,
+  "duration": 10131000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 583605000,
+  "duration": 581157600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5346262300,
+  "duration": 5323161600,
   "status": "passed"
 });
 formatter.background({
@@ -1247,21 +1248,21 @@ formatter.match({
   "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 280244500,
+  "duration": 457782000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 380520300,
+  "duration": 379387900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 11058900,
+  "duration": 12134300,
   "status": "passed"
 });
 formatter.scenario({
@@ -1291,29 +1292,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Artists_view_one_page()"
 });
 formatter.result({
-  "duration": 678662200,
+  "duration": 721649900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_new_Artists_details()"
 });
 formatter.result({
-  "duration": 383659900,
+  "duration": 393958800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_update_that_Artists_entry()"
 });
 formatter.result({
-  "duration": 648547000,
+  "duration": 620985900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 587432600,
+  "duration": 582335000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5365607900,
+  "duration": 5355835100,
   "status": "passed"
 });
 formatter.background({
@@ -1342,21 +1343,21 @@ formatter.match({
   "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 354961300,
+  "duration": 302247300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 339858500,
+  "duration": 403443500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 14728700,
+  "duration": 12084500,
   "status": "passed"
 });
 formatter.scenario({
@@ -1386,29 +1387,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Artists_view_one_page()"
 });
 formatter.result({
-  "duration": 679347700,
+  "duration": 704723300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_delete_Artists_button()"
 });
 formatter.result({
-  "duration": 565254600,
+  "duration": 568813000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_delete_that_Artists_entry()"
 });
 formatter.result({
-  "duration": 6066700,
+  "duration": 6239700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 582716100,
+  "duration": 583387700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5412662900,
+  "duration": 5353973100,
   "status": "passed"
 });
 formatter.background({
@@ -1437,21 +1438,21 @@ formatter.match({
   "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 245747600,
+  "duration": 420577600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 393640800,
+  "duration": 424125400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 20132900,
+  "duration": 16084300,
   "status": "passed"
 });
 formatter.scenario({
@@ -1481,29 +1482,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Artists_view_one_page()"
 });
 formatter.result({
-  "duration": 672072000,
+  "duration": 736187500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_a_linked_album()"
 });
 formatter.result({
-  "duration": 651244600,
+  "duration": 678859100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_an_taken_to_that_albums_page()"
 });
 formatter.result({
-  "duration": 9367600,
+  "duration": 10234300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 588221100,
+  "duration": 583657300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5321383700,
+  "duration": 5356139500,
   "status": "passed"
 });
 formatter.background({
@@ -1532,21 +1533,21 @@ formatter.match({
   "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 243497400,
+  "duration": 292913500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 416810000,
+  "duration": 397416900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 23829900,
+  "duration": 19492800,
   "status": "passed"
 });
 formatter.scenario({
@@ -1576,25 +1577,25 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Artists_page()"
 });
 formatter.result({
-  "duration": 645944200,
+  "duration": 658527400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_search_for_a_artist()"
 });
 formatter.result({
-  "duration": 596991100,
+  "duration": 593098400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.only_that_artists_details_are_displayed()"
 });
 formatter.result({
-  "duration": 8252400,
+  "duration": 9999600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 618799600,
+  "duration": 586533900,
   "status": "passed"
 });
 formatter.uri("genres.feature");
@@ -1612,7 +1613,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5332505400,
+  "duration": 5328552300,
   "status": "passed"
 });
 formatter.background({
@@ -1641,21 +1642,21 @@ formatter.match({
   "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 241420800,
+  "duration": 258873200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 408221700,
+  "duration": 369862200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 24206700,
+  "duration": 7055700,
   "status": "passed"
 });
 formatter.scenario({
@@ -1685,29 +1686,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_genres_page()"
 });
 formatter.result({
-  "duration": 666234700,
+  "duration": 645832100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_genres_details()"
 });
 formatter.result({
-  "duration": 415349800,
+  "duration": 403213400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_create_an_genres_entry()"
 });
 formatter.result({
-  "duration": 709987000,
+  "duration": 679618100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 582530600,
+  "duration": 591890800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5342841900,
+  "duration": 5414704400,
   "status": "passed"
 });
 formatter.background({
@@ -1736,21 +1737,21 @@ formatter.match({
   "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 238753600,
+  "duration": 244277600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 342489900,
+  "duration": 344977500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 7494200,
+  "duration": 12701800,
   "status": "passed"
 });
 formatter.scenario({
@@ -1775,22 +1776,22 @@ formatter.match({
   "location": "AllTests.i_can_access_the_genres_page()"
 });
 formatter.result({
-  "duration": 679450200,
+  "duration": 673535500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_all_the_genres_entries()"
 });
 formatter.result({
-  "duration": 255362000,
+  "duration": 273609300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 582264500,
+  "duration": 590945200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5346216000,
+  "duration": 5310456200,
   "status": "passed"
 });
 formatter.background({
@@ -1819,21 +1820,21 @@ formatter.match({
   "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 246417000,
+  "duration": 236107900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 363653200,
+  "duration": 364550700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 14831300,
+  "duration": 11737400,
   "status": "passed"
 });
 formatter.scenario({
@@ -1863,29 +1864,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_genres_page()"
 });
 formatter.result({
-  "duration": 646200100,
+  "duration": 632159200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_view_one_genres()"
 });
 formatter.result({
-  "duration": 619564500,
+  "duration": 649866900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_that_genres_details()"
 });
 formatter.result({
-  "duration": 9600300,
+  "duration": 9073100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 599338700,
+  "duration": 575147100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5354808300,
+  "duration": 5366279100,
   "status": "passed"
 });
 formatter.background({
@@ -1914,21 +1915,21 @@ formatter.match({
   "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 264209600,
+  "duration": 289573300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 337600200,
+  "duration": 400965300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 12644400,
+  "duration": 7832200,
   "status": "passed"
 });
 formatter.scenario({
@@ -1958,29 +1959,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_genres_view_one_page()"
 });
 formatter.result({
-  "duration": 660475000,
+  "duration": 664438100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_new_genres_details()"
 });
 formatter.result({
-  "duration": 519283600,
+  "duration": 499245800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_update_that_genres_entry()"
 });
 formatter.result({
-  "duration": 619673200,
+  "duration": 689856800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 586388300,
+  "duration": 586887000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5327453000,
+  "duration": 5336805900,
   "status": "passed"
 });
 formatter.background({
@@ -2009,21 +2010,21 @@ formatter.match({
   "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 242975700,
+  "duration": 289873900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 356326200,
+  "duration": 404070600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 14125400,
+  "duration": 19926500,
   "status": "passed"
 });
 formatter.scenario({
@@ -2053,29 +2054,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_genres_view_one_page()"
 });
 formatter.result({
-  "duration": 670699800,
+  "duration": 724865500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_delete_genres_button()"
 });
 formatter.result({
-  "duration": 579864600,
+  "duration": 621815500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_delete_that_genres_entry()"
 });
 formatter.result({
-  "duration": 5075400,
+  "duration": 6636700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 594574800,
+  "duration": 596195700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5329464600,
+  "duration": 5411115900,
   "status": "passed"
 });
 formatter.background({
@@ -2104,21 +2105,21 @@ formatter.match({
   "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 232468000,
+  "duration": 273483400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 397170300,
+  "duration": 405059900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 23791700,
+  "duration": 21259000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2148,25 +2149,25 @@ formatter.match({
   "location": "AllTests.i_can_access_the_genres_view_one_page()"
 });
 formatter.result({
-  "duration": 668800000,
+  "duration": 699023600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_a_track_in_that_genre()"
 });
 formatter.result({
-  "duration": 610200900,
-  "status": "passed"
+  "duration": 3286539100,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tracks \u003e div:nth-child(1) \u003e input[type\u003dbutton]\"}\n  (Session info: headless chrome\u003d88.0.4324.104)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-24TH8E7N\u0027, ip: \u0027192.168.1.148\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\Malik\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56564}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: dc6c72cf2942cb78cfcfd0e3bd3a6d29\n*** Element info: {Using\u003dcss selector, value\u003d#tracks \u003e div:nth-child(1) \u003e input[type\u003dbutton]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat pages.updateGenre.trackclick(updateGenre.java:46)\r\n\tat stepdef.AllTests.i_click_on_a_track_in_that_genre(AllTests.java:633)\r\n\tat ✽.When I click on a track in that genre(genres.feature:47)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "AllTests.i_am_taken_to_that_tracks_pagea()"
 });
 formatter.result({
-  "duration": 8657900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 600860900,
+  "duration": 594571500,
   "status": "passed"
 });
 formatter.uri("playlists.feature");
@@ -2184,7 +2185,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5371374000,
+  "duration": 5397830300,
   "status": "passed"
 });
 formatter.background({
@@ -2213,21 +2214,21 @@ formatter.match({
   "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 240840700,
+  "duration": 265421300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 383914700,
+  "duration": 358783700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 13003200,
+  "duration": 23452100,
   "status": "passed"
 });
 formatter.scenario({
@@ -2257,29 +2258,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Playlists_page()"
 });
 formatter.result({
-  "duration": 641278400,
+  "duration": 646723200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_Playlists_details()"
 });
 formatter.result({
-  "duration": 453949300,
+  "duration": 497772400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_create_an_Playlists_entry()"
 });
 formatter.result({
-  "duration": 628910700,
+  "duration": 638732200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 580247500,
+  "duration": 594971700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5460810600,
+  "duration": 5317552300,
   "status": "passed"
 });
 formatter.background({
@@ -2308,21 +2309,21 @@ formatter.match({
   "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 239609000,
+  "duration": 277518300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 353805700,
+  "duration": 434164900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 7134900,
+  "duration": 21173200,
   "status": "passed"
 });
 formatter.scenario({
@@ -2347,22 +2348,22 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Playlists_page()"
 });
 formatter.result({
-  "duration": 679879000,
+  "duration": 695180400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_all_the_Playlists_entries()"
 });
 formatter.result({
-  "duration": 268066900,
+  "duration": 278699100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 579825000,
+  "duration": 574834200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5336220600,
+  "duration": 5310020500,
   "status": "passed"
 });
 formatter.background({
@@ -2391,21 +2392,21 @@ formatter.match({
   "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 325046200,
+  "duration": 273989700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 341807400,
+  "duration": 423731100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 11291000,
+  "duration": 20997300,
   "status": "passed"
 });
 formatter.scenario({
@@ -2435,29 +2436,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Playlists_page()"
 });
 formatter.result({
-  "duration": 659507600,
+  "duration": 674700500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_view_one_Playlists()"
 });
 formatter.result({
-  "duration": 611071400,
+  "duration": 680241300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_that_Playlists_details()"
 });
 formatter.result({
-  "duration": 9181900,
+  "duration": 10532800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 581518300,
+  "duration": 590541700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5323274500,
+  "duration": 5391992300,
   "status": "passed"
 });
 formatter.background({
@@ -2486,21 +2487,21 @@ formatter.match({
   "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 261730600,
+  "duration": 239497400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 377958600,
+  "duration": 373455500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 20710200,
+  "duration": 6501000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2530,29 +2531,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Playlists_view_one_page()"
 });
 formatter.result({
-  "duration": 688603200,
+  "duration": 672078700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_new_Playlists_details()"
 });
 formatter.result({
-  "duration": 575934900,
+  "duration": 596507100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_update_that_Playlists_entry()"
 });
 formatter.result({
-  "duration": 632853900,
+  "duration": 644322900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 589523700,
+  "duration": 561082400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5463709900,
+  "duration": 5325907400,
   "status": "passed"
 });
 formatter.background({
@@ -2581,21 +2582,21 @@ formatter.match({
   "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 241225300,
+  "duration": 241181300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 400335400,
+  "duration": 336988100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 20131400,
+  "duration": 11062500,
   "status": "passed"
 });
 formatter.scenario({
@@ -2625,29 +2626,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Playlists_view_one_page()"
 });
 formatter.result({
-  "duration": 669301900,
+  "duration": 688862300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_delete_Playlists_button()"
 });
 formatter.result({
-  "duration": 574202500,
+  "duration": 579123600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_delete_that_Playlists_entry()"
 });
 formatter.result({
-  "duration": 5865900,
+  "duration": 6445900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 588413300,
+  "duration": 582386500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5327832500,
+  "duration": 5349120800,
   "status": "passed"
 });
 formatter.background({
@@ -2676,21 +2677,21 @@ formatter.match({
   "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 247947100,
+  "duration": 255932900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 390915200,
+  "duration": 388060900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 5597500,
+  "duration": 10639500,
   "status": "passed"
 });
 formatter.scenario({
@@ -2720,29 +2721,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_Playlists_view_one_page()"
 });
 formatter.result({
-  "duration": 651798700,
+  "duration": 711776600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_a_linked_track()"
 });
 formatter.result({
-  "duration": 615152200,
-  "status": "passed"
+  "duration": 3281731100,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#tracks \u003e div:nth-child(1) \u003e input[type\u003dbutton]\"}\n  (Session info: headless chrome\u003d88.0.4324.104)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-24TH8E7N\u0027, ip: \u0027192.168.1.148\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\Malik\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 14622d58297364ee46ae469698ddb493\n*** Element info: {Using\u003dcss selector, value\u003d#tracks \u003e div:nth-child(1) \u003e input[type\u003dbutton]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat pages.updatePlaylists.tracklinkclick(updatePlaylists.java:55)\r\n\tat stepdef.AllTests.i_click_on_a_linked_track(AllTests.java:799)\r\n\tat ✽.When I click on a linked track(playlists.feature:44)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "AllTests.i_an_taken_to_that_tracks_page()"
 });
 formatter.result({
-  "duration": 8949200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 591415900,
+  "duration": 567549600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5346999700,
+  "duration": 5343955500,
   "status": "passed"
 });
 formatter.background({
@@ -2771,21 +2772,21 @@ formatter.match({
   "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 245575100,
+  "duration": 253336700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 444801400,
+  "duration": 340196100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 20811600,
+  "duration": 14312600,
   "status": "passed"
 });
 formatter.scenario({
@@ -2815,25 +2816,25 @@ formatter.match({
   "location": "AllTests.i_can_access_the_homepage()"
 });
 formatter.result({
-  "duration": 308892600,
+  "duration": 301447100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_search_for_a_playlist()"
 });
 formatter.result({
-  "duration": 334804600,
+  "duration": 341225100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.only_that_playlists_details_are_displayed()"
 });
 formatter.result({
-  "duration": 8322100,
+  "duration": 9016900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 582339700,
+  "duration": 581554400,
   "status": "passed"
 });
 formatter.uri("tracks.feature");
@@ -2851,7 +2852,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5314891400,
+  "duration": 5329486900,
   "status": "passed"
 });
 formatter.background({
@@ -2880,21 +2881,21 @@ formatter.match({
   "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 242440300,
+  "duration": 273089000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 332854700,
+  "duration": 360685900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 14459700,
+  "duration": 14219400,
   "status": "passed"
 });
 formatter.scenario({
@@ -2924,29 +2925,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_tracks_page_from_the_albums()"
 });
 formatter.result({
-  "duration": 1009324600,
+  "duration": 978647400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_tracks_details()"
 });
 formatter.result({
-  "duration": 651451000,
+  "duration": 603786200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_create_an_tracks_entry()"
 });
 formatter.result({
-  "duration": 962259800,
+  "duration": 916787400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 610404800,
+  "duration": 572657300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5325903200,
+  "duration": 5303578200,
   "status": "passed"
 });
 formatter.background({
@@ -2975,21 +2976,21 @@ formatter.match({
   "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 237630500,
+  "duration": 281415000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 355628500,
+  "duration": 342536100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 6885600,
+  "duration": 7913100,
   "status": "passed"
 });
 formatter.scenario({
@@ -3014,22 +3015,22 @@ formatter.match({
   "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 667198600,
+  "duration": 689102200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_all_the_tracks_entries()"
 });
 formatter.result({
-  "duration": 6064800,
+  "duration": 6372400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 568446700,
+  "duration": 577654800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5328036500,
+  "duration": 5318131300,
   "status": "passed"
 });
 formatter.background({
@@ -3058,21 +3059,21 @@ formatter.match({
   "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 298525000,
+  "duration": 293301000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 347538200,
+  "duration": 405548600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 24432200,
+  "duration": 17462300,
   "status": "passed"
 });
 formatter.scenario({
@@ -3102,29 +3103,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 659817500,
+  "duration": 762799300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_view_one_tracks()"
 });
 formatter.result({
-  "duration": 618577700,
+  "duration": 689814700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_read_that_tracks_details()"
 });
 formatter.result({
-  "duration": 7622700,
+  "duration": 9183400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 577508800,
+  "duration": 596048300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5345820100,
+  "duration": 5380978400,
   "status": "passed"
 });
 formatter.background({
@@ -3153,21 +3154,21 @@ formatter.match({
   "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 249136700,
+  "duration": 330883000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 409814800,
+  "duration": 459578900,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 23697700,
+  "duration": 9518800,
   "status": "passed"
 });
 formatter.scenario({
@@ -3197,29 +3198,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 669385300,
+  "duration": 732334300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_enter_new_tracks_details()"
 });
 formatter.result({
-  "duration": 1221027700,
+  "duration": 1379660400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_update_that_tracks_entry()"
 });
 formatter.result({
-  "duration": 647216100,
+  "duration": 694245800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 585517900,
+  "duration": 563291200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5335420800,
+  "duration": 5407464700,
   "status": "passed"
 });
 formatter.background({
@@ -3248,21 +3249,21 @@ formatter.match({
   "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 249759000,
+  "duration": 267342100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 335277000,
+  "duration": 338003300,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 6031300,
+  "duration": 11291000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3292,29 +3293,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 678532800,
+  "duration": 686911400,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_delete_tracks_button()"
 });
 formatter.result({
-  "duration": 950159400,
+  "duration": 949739700,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_can_delete_that_tracks_entry()"
 });
 formatter.result({
-  "duration": 6282500,
+  "duration": 6216300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 595081700,
+  "duration": 564756500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5420775800,
+  "duration": 5342751200,
   "status": "passed"
 });
 formatter.background({
@@ -3343,21 +3344,21 @@ formatter.match({
   "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 235671500,
+  "duration": 312453200,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 360287500,
+  "duration": 408542500,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 14077800,
+  "duration": 9069400,
   "status": "passed"
 });
 formatter.scenario({
@@ -3387,29 +3388,29 @@ formatter.match({
   "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 674631800,
+  "duration": 793223100,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_click_on_a_album_in_that_track()"
 });
 formatter.result({
-  "duration": 939502800,
+  "duration": 1060992000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_am_taken_to_that_albums_page()"
 });
 formatter.result({
-  "duration": 8715400,
+  "duration": 11635600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 582035600,
+  "duration": 596006200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5318176700,
+  "duration": 5445442200,
   "status": "passed"
 });
 formatter.background({
@@ -3438,21 +3439,21 @@ formatter.match({
   "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 243136600,
+  "duration": 263254000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 346220300,
+  "duration": 407311600,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 19741600,
+  "duration": 14087800,
   "status": "passed"
 });
 formatter.scenario({
@@ -3482,25 +3483,25 @@ formatter.match({
   "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 687133900,
+  "duration": 692536000,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.i_search_for_a_track()"
 });
 formatter.result({
-  "duration": 337088900,
+  "duration": 325075800,
   "status": "passed"
 });
 formatter.match({
   "location": "AllTests.only_that_tracks_details_are_displayed()"
 });
 formatter.result({
-  "duration": 8432900,
+  "duration": 7315800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 589799200,
+  "duration": 576920000,
   "status": "passed"
 });
 });

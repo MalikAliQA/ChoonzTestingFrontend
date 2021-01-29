@@ -249,7 +249,7 @@ public class AllTests {
 		Helper.snapShot(driver, "src/test/resources/reports/Album/trackNav/shot2.png");
 		updateAlbum album2 = PageFactory.initElements(driver, updateAlbum.class);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-    	WebElement Element = driver.findElement(By.cssSelector("#tracks > div:nth-child(1) > input[type=button]"));
+    	WebElement Element = driver.findElement(By.cssSelector("#tracks-container > div:nth-child(1) > input[type=button]"));
     	js.executeScript("arguments[0].scrollIntoView();", Element);
 		Helper.snapShot(driver, "src/test/resources/reports/Album/trackNav/shot3.png");
     	album2.trackclick();
