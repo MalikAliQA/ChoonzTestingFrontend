@@ -67,6 +67,7 @@ public class Genres {
 	public void user_enter_the_correct_details() throws Throwable {
 		loginPage login = PageFactory.initElements(driver, loginPage.class);
 		login.loguser("user", "password");
+		login.click();
 	}
 
 	@Then("^userd is logged in$")

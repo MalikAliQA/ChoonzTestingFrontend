@@ -1,4 +1,174 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("albums.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginLogout.feature");
+formatter.feature({
+  "line": 2,
+  "name": "User registration, login and logout",
+  "description": "",
+  "id": "user-registration,-login-and-logout",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@loginlogout"
+    }
+  ]
+});
+formatter.before({
+  "duration": 5896806600,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 4,
+  "name": "I wish to login to the system",
+  "description": "",
+  "id": "user-registration,-login-and-logout;i-wish-to-login-to-the-system",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
+  "name": "i go to the login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "i enter the user name and passwird",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "i can login",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AllTests.i_go_to_the_login_page()"
+});
+formatter.result({
+  "duration": 3009324100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AllTests.i_enter_the_user_name_and_passwird()"
+});
+formatter.result({
+  "duration": 845686700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AllTests.i_can_login()"
+});
+formatter.result({
+  "duration": 268711500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 576648900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 5314860100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 9,
+  "name": "I wish to logout of the system",
+  "description": "",
+  "id": "user-registration,-login-and-logout;i-wish-to-logout-of-the-system",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 10,
+  "name": "i can logina",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 11,
+  "name": "when i click logout",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "i am logged out",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AllTests.i_can_logina()"
+});
+formatter.result({
+  "duration": 1136852900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AllTests.when_i_click_logout()"
+});
+formatter.result({
+  "duration": 146449700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AllTests.i_am_logged_out()"
+});
+formatter.result({
+  "duration": 330946000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 589264000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 5357879800,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 14,
+  "name": "I wish to register as a new user",
+  "description": "",
+  "id": "user-registration,-login-and-logout;i-wish-to-register-as-a-new-user",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 15,
+  "name": "i can go to the register page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 16,
+  "name": "i enter the registration details",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 17,
+  "name": "i can login with the details",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AllTests.i_can_go_to_the_register_page()"
+});
+formatter.result({
+  "duration": 408911600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AllTests.i_enter_the_registration_details()"
+});
+formatter.result({
+  "duration": 525955600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AllTests.i_can_login_with_the_details()"
+});
+formatter.result({
+  "duration": 1575708500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 581254900,
+  "status": "passed"
+});
+formatter.uri("albums.feature");
 formatter.feature({
   "line": 2,
   "name": "Albums Page",
@@ -13,23 +183,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5929250100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5328802100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5388111100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5341886400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5323338100,
+  "duration": 5330864800,
   "status": "passed"
 });
 formatter.background({
@@ -55,24 +209,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.navigate_to_the_login_page()"
+  "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 460359400,
+  "duration": 228357300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 604812100,
+  "duration": 409491900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_is_logged_in()"
+  "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 8624500,
+  "duration": 16279300,
   "status": "passed"
 });
 formatter.scenario({
@@ -99,64 +253,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.i_can_access_the_albums_page_from_the_artist()"
+  "location": "AllTests.i_can_access_the_albums_page_from_the_artist()"
 });
 formatter.result({
-  "duration": 1009036400,
+  "duration": 1011765100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_enter_album_details()"
+  "location": "AllTests.i_enter_album_details()"
 });
 formatter.result({
-  "duration": 415412100,
+  "duration": 411495300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_can_create_an_album_entry()"
+  "location": "AllTests.i_can_create_an_album_entry()"
 });
 formatter.result({
-  "duration": 1038860700,
+  "duration": 998638600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 574518200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 570751200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 591064600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 563791800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 590573300,
+  "duration": 578526400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5327955600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5330882900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5350398100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5299271700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5303223900,
+  "duration": 5322103100,
   "status": "passed"
 });
 formatter.background({
@@ -182,24 +304,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.navigate_to_the_login_page()"
+  "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 258922400,
+  "duration": 279729300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 370288300,
+  "duration": 409703800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_is_logged_in()"
+  "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 12286400,
+  "duration": 17317500,
   "status": "passed"
 });
 formatter.scenario({
@@ -221,57 +343,25 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.i_can_access_the_albums_page()"
+  "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 690505400,
+  "duration": 693383700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_can_read_all_the_album_entries()"
+  "location": "AllTests.i_can_read_all_the_album_entries()"
 });
 formatter.result({
-  "duration": 6709300,
+  "duration": 6308900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 579060200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 565477200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 567238500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 567560100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 563157100,
+  "duration": 582392500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5333796600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5314673500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5280722300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5314375400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5344114800,
+  "duration": 5352024400,
   "status": "passed"
 });
 formatter.background({
@@ -297,24 +387,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.navigate_to_the_login_page()"
+  "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 242979000,
+  "duration": 272911200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 406480300,
+  "duration": 347323600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_is_logged_in()"
+  "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 11085200,
+  "duration": 15118400,
   "status": "passed"
 });
 formatter.scenario({
@@ -341,64 +431,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.i_can_access_the_albums_page()"
+  "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 702854600,
+  "duration": 687394700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_click_on_view_one_album()"
+  "location": "AllTests.i_click_on_view_one_album()"
 });
 formatter.result({
-  "duration": 641456400,
+  "duration": 632357200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_can_read_that_albums_details()"
+  "location": "AllTests.i_can_read_that_albums_details()"
 });
 formatter.result({
-  "duration": 10712800,
+  "duration": 9748000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 569131900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 590579400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 587795000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 572781800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 590125100,
+  "duration": 583545600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5302084400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5330421000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5312301000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5292721500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5310261700,
+  "duration": 5340891600,
   "status": "passed"
 });
 formatter.background({
@@ -424,24 +482,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.navigate_to_the_login_page()"
+  "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 265221500,
+  "duration": 282227400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 392718500,
+  "duration": 402486700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_is_logged_in()"
+  "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 16091900,
+  "duration": 7438300,
   "status": "passed"
 });
 formatter.scenario({
@@ -468,64 +526,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.i_can_access_the_albums_page()"
+  "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 695797300,
+  "duration": 757140500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_enter_new_album_details()"
+  "location": "AllTests.i_enter_new_album_details()"
 });
 formatter.result({
-  "duration": 1148629500,
+  "duration": 1272142200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_can_update_that_albums_entry()"
+  "location": "AllTests.i_can_update_that_albums_entry()"
 });
 formatter.result({
-  "duration": 710349100,
+  "duration": 763961700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 579141500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 569124400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575842700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574541000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 561704200,
+  "duration": 610689000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5325680100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5331897000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5363087600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5331507200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5281898700,
+  "duration": 5315073600,
   "status": "passed"
 });
 formatter.background({
@@ -551,24 +577,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.navigate_to_the_login_page()"
+  "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 259611000,
+  "duration": 270384500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 360103900,
+  "duration": 416231300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_is_logged_in()"
+  "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 6796400,
+  "duration": 26066900,
   "status": "passed"
 });
 formatter.scenario({
@@ -595,64 +621,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.i_can_access_the_albums_page()"
+  "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 693892200,
+  "duration": 688249400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_click_on_delete_album_button()"
+  "location": "AllTests.i_click_on_delete_album_button()"
 });
 formatter.result({
-  "duration": 944147500,
+  "duration": 987763600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_can_delete_that_albums_entry()"
+  "location": "AllTests.i_can_delete_that_albums_entry()"
 });
 formatter.result({
-  "duration": 6375100,
+  "duration": 6813700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 581617000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 561342900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 560860600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 587728100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575391200,
+  "duration": 589235000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5304634600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5324625600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5304137100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5298318500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5327692900,
+  "duration": 5400815900,
   "status": "passed"
 });
 formatter.background({
@@ -678,24 +672,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.navigate_to_the_login_page()"
+  "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 267108400,
+  "duration": 262930100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 351396400,
+  "duration": 372905900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_is_logged_in()"
+  "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 14457100,
+  "duration": 14222400,
   "status": "passed"
 });
 formatter.scenario({
@@ -722,64 +716,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.i_can_access_the_albums_page()"
+  "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 661905000,
+  "duration": 711108700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_click_on_the_artist_of_that_album()"
+  "location": "AllTests.i_click_on_the_artist_of_that_album()"
 });
 formatter.result({
-  "duration": 972954800,
+  "duration": 1000397300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_am_taken_to_that_artists_page()"
+  "location": "AllTests.i_am_taken_to_that_artists_page()"
 });
 formatter.result({
-  "duration": 9222800,
+  "duration": 11100300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 577222500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 579292600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 576790600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574560700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575241700,
+  "duration": 581032400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5345002700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5347208800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5310453300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5318285600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5306022500,
+  "duration": 5349860000,
   "status": "passed"
 });
 formatter.background({
@@ -805,24 +767,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.navigate_to_the_login_page()"
+  "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 252292500,
+  "duration": 772787200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 377659200,
+  "duration": 398251400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_is_logged_in()"
+  "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 7207200,
+  "duration": 19140600,
   "status": "passed"
 });
 formatter.scenario({
@@ -849,64 +811,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.i_can_access_the_albums_page()"
+  "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 709166700,
+  "duration": 698604300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_click_on_a_track_in_that_album()"
+  "location": "AllTests.i_click_on_a_track_in_that_album()"
 });
 formatter.result({
-  "duration": 1312840000,
+  "duration": 1321485300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_am_taken_to_that_tracks_page()"
+  "location": "AllTests.i_am_taken_to_that_tracks_page()"
 });
 formatter.result({
-  "duration": 9301900,
+  "duration": 10167800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 574035800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577229400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 579273200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562615000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 590050400,
+  "duration": 584785400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5318020900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5394707600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5319772000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5295364300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5305765000,
+  "duration": 5405056000,
   "status": "passed"
 });
 formatter.background({
@@ -932,24 +862,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.navigate_to_the_login_page()"
+  "location": "AllTests.navigatea_to_the_login_page()"
 });
 formatter.result({
-  "duration": 246193200,
+  "duration": 285887600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correcta_details()"
 });
 formatter.result({
-  "duration": 370167400,
+  "duration": 448381100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.user_is_logged_in()"
+  "location": "AllTests.usera_is_logged_in()"
 });
 formatter.result({
-  "duration": 7581000,
+  "duration": 18563100,
   "status": "passed"
 });
 formatter.scenario({
@@ -976,44 +906,28 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Albums.i_can_access_the_albums_page()"
+  "location": "AllTests.i_can_access_the_albums_page()"
 });
 formatter.result({
-  "duration": 666135800,
+  "duration": 718433900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.i_search_for_a_album()"
+  "location": "AllTests.i_search_for_a_album()"
 });
 formatter.result({
-  "duration": 340348600,
+  "duration": 364369700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Albums.only_that_albums_details_are_displayed()"
+  "location": "AllTests.only_that_albums_details_are_displayed()"
 });
 formatter.result({
-  "duration": 8808300,
+  "duration": 9768800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 563377900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 563497200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575245000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574973700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575968700,
+  "duration": 577044900,
   "status": "passed"
 });
 formatter.uri("artists.feature");
@@ -1031,23 +945,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5296440000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5297351700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5304690300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5325088200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5300255200,
+  "duration": 5411339400,
   "status": "passed"
 });
 formatter.background({
@@ -1073,24 +971,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.navigate_to_the_login_page()"
+  "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 261045500,
+  "duration": 242927700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 352239100,
+  "duration": 404724000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_is_logged_in()"
+  "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 11838500,
+  "duration": 14322900,
   "status": "passed"
 });
 formatter.scenario({
@@ -1117,64 +1015,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.i_can_access_the_Artists_page()"
+  "location": "AllTests.i_can_access_the_Artists_page()"
 });
 formatter.result({
-  "duration": 621206000,
+  "duration": 644471600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_enter_Artists_details()"
+  "location": "AllTests.i_enter_Artists_details()"
 });
 formatter.result({
-  "duration": 343046000,
+  "duration": 332167700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_can_create_an_Artists_entry()"
+  "location": "AllTests.i_can_create_an_Artists_entry()"
 });
 formatter.result({
-  "duration": 603561200,
+  "duration": 620695000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 576463000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 591085500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575033200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575567400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575175500,
+  "duration": 582976300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5322121700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5319821500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5336185800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5313748600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5302689800,
+  "duration": 5338531500,
   "status": "passed"
 });
 formatter.background({
@@ -1200,24 +1066,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.navigate_to_the_login_page()"
+  "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 267624100,
+  "duration": 235387700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 388745200,
+  "duration": 362460600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_is_logged_in()"
+  "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 7218900,
+  "duration": 7370700,
   "status": "passed"
 });
 formatter.scenario({
@@ -1239,57 +1105,25 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.i_can_access_the_Artists_page()"
+  "location": "AllTests.i_can_access_the_Artists_page()"
 });
 formatter.result({
-  "duration": 605938900,
+  "duration": 658412600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_can_read_all_the_Artists_entries()"
+  "location": "AllTests.i_can_read_all_the_Artists_entries()"
 });
 formatter.result({
-  "duration": 260213900,
+  "duration": 269238100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 565137900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 589429400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562894200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 573480900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575486400,
+  "duration": 583541300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5311061100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5364210800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5338825300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5313319000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5318853300,
+  "duration": 5316152700,
   "status": "passed"
 });
 formatter.background({
@@ -1315,24 +1149,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.navigate_to_the_login_page()"
+  "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 273323900,
+  "duration": 236575700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 422670400,
+  "duration": 376733100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_is_logged_in()"
+  "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 29118000,
+  "duration": 24286100,
   "status": "passed"
 });
 formatter.scenario({
@@ -1359,64 +1193,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.i_can_access_the_Artists_page()"
+  "location": "AllTests.i_can_access_the_Artists_page()"
 });
 formatter.result({
-  "duration": 645207000,
+  "duration": 637467600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_click_on_view_one_Artists()"
+  "location": "AllTests.i_click_on_view_one_Artists()"
 });
 formatter.result({
-  "duration": 632936700,
+  "duration": 631854200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_can_read_that_Artists_details()"
+  "location": "AllTests.i_can_read_that_Artists_details()"
 });
 formatter.result({
-  "duration": 7642400,
+  "duration": 12698500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 563571000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 566626400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 571574000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 565565000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 567943700,
+  "duration": 583605000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5311240000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5313459500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5282583400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5332660300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5297375700,
+  "duration": 5346262300,
   "status": "passed"
 });
 formatter.background({
@@ -1442,24 +1244,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.navigate_to_the_login_page()"
+  "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 237795900,
+  "duration": 280244500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 371936300,
+  "duration": 380520300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_is_logged_in()"
+  "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 11686300,
+  "duration": 11058900,
   "status": "passed"
 });
 formatter.scenario({
@@ -1486,64 +1288,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.i_can_access_the_Artists_view_one_page()"
+  "location": "AllTests.i_can_access_the_Artists_view_one_page()"
 });
 formatter.result({
-  "duration": 676378200,
+  "duration": 678662200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_enter_new_Artists_details()"
+  "location": "AllTests.i_enter_new_Artists_details()"
 });
 formatter.result({
-  "duration": 388219800,
+  "duration": 383659900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_can_update_that_Artists_entry()"
+  "location": "AllTests.i_can_update_that_Artists_entry()"
 });
 formatter.result({
-  "duration": 887652200,
+  "duration": 648547000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 558056500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 580304500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562671800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562348600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575984300,
+  "duration": 587432600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5315764600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5307504700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5291260600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5326553200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5280505100,
+  "duration": 5365607900,
   "status": "passed"
 });
 formatter.background({
@@ -1569,24 +1339,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.navigate_to_the_login_page()"
+  "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 240416900,
+  "duration": 354961300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 342064700,
+  "duration": 339858500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_is_logged_in()"
+  "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 12691500,
+  "duration": 14728700,
   "status": "passed"
 });
 formatter.scenario({
@@ -1613,64 +1383,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.i_can_access_the_Artists_view_one_page()"
+  "location": "AllTests.i_can_access_the_Artists_view_one_page()"
 });
 formatter.result({
-  "duration": 663673400,
+  "duration": 679347700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_click_on_delete_Artists_button()"
+  "location": "AllTests.i_click_on_delete_Artists_button()"
 });
 formatter.result({
-  "duration": 598596500,
+  "duration": 565254600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_can_delete_that_Artists_entry()"
+  "location": "AllTests.i_can_delete_that_Artists_entry()"
 });
 formatter.result({
-  "duration": 5584200,
+  "duration": 6066700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 566092200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 578708300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 588698200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 573705800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 576719500,
+  "duration": 582716100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5328450200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5351841200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5304982100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5312816900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5304452700,
+  "duration": 5412662900,
   "status": "passed"
 });
 formatter.background({
@@ -1696,24 +1434,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.navigate_to_the_login_page()"
+  "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 234273100,
+  "duration": 245747600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 401053700,
+  "duration": 393640800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_is_logged_in()"
+  "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 14287800,
+  "duration": 20132900,
   "status": "passed"
 });
 formatter.scenario({
@@ -1740,64 +1478,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.i_can_access_the_Artists_view_one_page()"
+  "location": "AllTests.i_can_access_the_Artists_view_one_page()"
 });
 formatter.result({
-  "duration": 664238000,
+  "duration": 672072000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_click_on_a_linked_album()"
+  "location": "AllTests.i_click_on_a_linked_album()"
 });
 formatter.result({
-  "duration": 621527300,
+  "duration": 651244600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_an_taken_to_that_albums_page()"
+  "location": "AllTests.i_an_taken_to_that_albums_page()"
 });
 formatter.result({
-  "duration": 9098100,
+  "duration": 9367600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 562074900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 593374800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 563562000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577982400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 589413500,
+  "duration": 588221100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5320650800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5314666300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5296739600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5323863800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5328123000,
+  "duration": 5321383700,
   "status": "passed"
 });
 formatter.background({
@@ -1823,24 +1529,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.navigate_to_the_login_page()"
+  "location": "AllTests.navigate_to_the_login_page()"
 });
 formatter.result({
-  "duration": 279553900,
+  "duration": 243497400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_enter_the_correct_details()"
+  "location": "AllTests.user_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 360484900,
+  "duration": 416810000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.user_is_logged_in()"
+  "location": "AllTests.user_is_logged_in()"
 });
 formatter.result({
-  "duration": 6561000,
+  "duration": 23829900,
   "status": "passed"
 });
 formatter.scenario({
@@ -1867,44 +1573,28 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Artists.i_can_access_the_Artists_page()"
+  "location": "AllTests.i_can_access_the_Artists_page()"
 });
 formatter.result({
-  "duration": 708650600,
+  "duration": 645944200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.i_search_for_a_artist()"
+  "location": "AllTests.i_search_for_a_artist()"
 });
 formatter.result({
-  "duration": 781777900,
+  "duration": 596991100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Artists.only_that_artists_details_are_displayed()"
+  "location": "AllTests.only_that_artists_details_are_displayed()"
 });
 formatter.result({
-  "duration": 14420200,
+  "duration": 8252400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 691613300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 571655200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 591612500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 573953500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 561065900,
+  "duration": 618799600,
   "status": "passed"
 });
 formatter.uri("genres.feature");
@@ -1922,23 +1612,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5316498500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5324718800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5282542900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5301614200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5288974800,
+  "duration": 5332505400,
   "status": "passed"
 });
 formatter.background({
@@ -1964,24 +1638,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.navigate_to_the_login_page()"
+  "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 278786300,
+  "duration": 241420800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_enter_the_correct_details()"
+  "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 345740100,
+  "duration": 408221700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_is_logged_in()"
+  "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 21339000,
+  "duration": 24206700,
   "status": "passed"
 });
 formatter.scenario({
@@ -2008,64 +1682,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.i_can_access_the_genres_page()"
+  "location": "AllTests.i_can_access_the_genres_page()"
 });
 formatter.result({
-  "duration": 626943000,
+  "duration": 666234700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_enter_genres_details()"
+  "location": "AllTests.i_enter_genres_details()"
 });
 formatter.result({
-  "duration": 566666500,
+  "duration": 415349800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_can_create_an_genres_entry()"
+  "location": "AllTests.i_can_create_an_genres_entry()"
 });
 formatter.result({
-  "duration": 736775400,
+  "duration": 709987000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 557054900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 566952600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 578991300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562328100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 563064000,
+  "duration": 582530600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5329786300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5305721100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5301534700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5317227300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5321277000,
+  "duration": 5342841900,
   "status": "passed"
 });
 formatter.background({
@@ -2091,24 +1733,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.navigate_to_the_login_page()"
+  "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 322912500,
+  "duration": 238753600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_enter_the_correct_details()"
+  "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 333838600,
+  "duration": 342489900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_is_logged_in()"
+  "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 17910500,
+  "duration": 7494200,
   "status": "passed"
 });
 formatter.scenario({
@@ -2130,57 +1772,25 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.i_can_access_the_genres_page()"
+  "location": "AllTests.i_can_access_the_genres_page()"
 });
 formatter.result({
-  "duration": 640096600,
+  "duration": 679450200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_can_read_all_the_genres_entries()"
+  "location": "AllTests.i_can_read_all_the_genres_entries()"
 });
 formatter.result({
-  "duration": 274430200,
+  "duration": 255362000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 563284400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 578787000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 591207700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562386000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 578260600,
+  "duration": 582264500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5332119700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5291716100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5308390400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5304722100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5307235600,
+  "duration": 5346216000,
   "status": "passed"
 });
 formatter.background({
@@ -2206,24 +1816,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.navigate_to_the_login_page()"
+  "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 316661000,
+  "duration": 246417000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_enter_the_correct_details()"
+  "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 352844400,
+  "duration": 363653200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_is_logged_in()"
+  "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 20838200,
+  "duration": 14831300,
   "status": "passed"
 });
 formatter.scenario({
@@ -2250,64 +1860,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.i_can_access_the_genres_page()"
+  "location": "AllTests.i_can_access_the_genres_page()"
 });
 formatter.result({
-  "duration": 640131000,
+  "duration": 646200100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_click_on_view_one_genres()"
+  "location": "AllTests.i_click_on_view_one_genres()"
 });
 formatter.result({
-  "duration": 616164600,
+  "duration": 619564500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_can_read_that_genres_details()"
+  "location": "AllTests.i_can_read_that_genres_details()"
 });
 formatter.result({
-  "duration": 8788200,
+  "duration": 9600300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 564896700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 588674400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575189200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 579043500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 579284500,
+  "duration": 599338700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5344952500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5299295200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5327406500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5289526100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5304385100,
+  "duration": 5354808300,
   "status": "passed"
 });
 formatter.background({
@@ -2333,24 +1911,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.navigate_to_the_login_page()"
+  "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 292990300,
+  "duration": 264209600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_enter_the_correct_details()"
+  "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 328716000,
+  "duration": 337600200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_is_logged_in()"
+  "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 12353100,
+  "duration": 12644400,
   "status": "passed"
 });
 formatter.scenario({
@@ -2377,64 +1955,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.i_can_access_the_genres_view_one_page()"
+  "location": "AllTests.i_can_access_the_genres_view_one_page()"
 });
 formatter.result({
-  "duration": 687414800,
+  "duration": 660475000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_enter_new_genres_details()"
+  "location": "AllTests.i_enter_new_genres_details()"
 });
 formatter.result({
-  "duration": 509613900,
+  "duration": 519283600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_can_update_that_genres_entry()"
+  "location": "AllTests.i_can_update_that_genres_entry()"
 });
 formatter.result({
-  "duration": 916718100,
+  "duration": 619673200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 574635800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575724700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 572934500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574770800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 586033100,
+  "duration": 586388300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5311345000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5353810700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5305118800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5311440400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5289255400,
+  "duration": 5327453000,
   "status": "passed"
 });
 formatter.background({
@@ -2460,24 +2006,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.navigate_to_the_login_page()"
+  "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 249791300,
+  "duration": 242975700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_enter_the_correct_details()"
+  "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 444160300,
+  "duration": 356326200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_is_logged_in()"
+  "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 14809200,
+  "duration": 14125400,
   "status": "passed"
 });
 formatter.scenario({
@@ -2504,64 +2050,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.i_can_access_the_genres_view_one_page()"
+  "location": "AllTests.i_can_access_the_genres_view_one_page()"
 });
 formatter.result({
-  "duration": 697877300,
+  "duration": 670699800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_click_on_delete_genres_button()"
+  "location": "AllTests.i_click_on_delete_genres_button()"
 });
 formatter.result({
-  "duration": 619982000,
+  "duration": 579864600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_can_delete_that_genres_entry()"
+  "location": "AllTests.i_can_delete_that_genres_entry()"
 });
 formatter.result({
-  "duration": 8937100,
+  "duration": 5075400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 566126500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 576891900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574800500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 561625500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 591003900,
+  "duration": 594574800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5336650700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5308636000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5329317400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5312291300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5343699800,
+  "duration": 5329464600,
   "status": "passed"
 });
 formatter.background({
@@ -2587,24 +2101,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.navigate_to_the_login_page()"
+  "location": "AllTests.navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 239940500,
+  "duration": 232468000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_enter_the_correct_details()"
+  "location": "AllTests.userd_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 359277000,
+  "duration": 397170300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.user_is_logged_in()"
+  "location": "AllTests.userd_is_logged_in()"
 });
 formatter.result({
-  "duration": 13635300,
+  "duration": 23791700,
   "status": "passed"
 });
 formatter.scenario({
@@ -2627,48 +2141,32 @@ formatter.step({
 });
 formatter.step({
   "line": 48,
-  "name": "i am taken to that tracks page",
+  "name": "i am taken to that tracks pagea",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Genres.i_can_access_the_genres_view_one_page()"
+  "location": "AllTests.i_can_access_the_genres_view_one_page()"
 });
 formatter.result({
-  "duration": 686675000,
+  "duration": 668800000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_click_on_a_track_in_that_genre()"
+  "location": "AllTests.i_click_on_a_track_in_that_genre()"
 });
 formatter.result({
-  "duration": 610393800,
+  "duration": 610200900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Genres.i_am_taken_to_that_tracks_page()"
+  "location": "AllTests.i_am_taken_to_that_tracks_pagea()"
 });
 formatter.result({
-  "duration": 9457200,
+  "duration": 8657900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 561125500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 565153600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 564137900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 564206000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 567866000,
+  "duration": 600860900,
   "status": "passed"
 });
 formatter.uri("playlists.feature");
@@ -2686,23 +2184,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5320989700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5289914300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5336927000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5296127800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5291361700,
+  "duration": 5371374000,
   "status": "passed"
 });
 formatter.background({
@@ -2728,24 +2210,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.navigate_to_the_login_page()"
+  "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 232744800,
+  "duration": 240840700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_enter_the_correct_details()"
+  "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 371668800,
+  "duration": 383914700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_is_logged_in()"
+  "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 6281900,
+  "duration": 13003200,
   "status": "passed"
 });
 formatter.scenario({
@@ -2772,64 +2254,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.i_can_access_the_Playlists_page()"
+  "location": "AllTests.i_can_access_the_Playlists_page()"
 });
 formatter.result({
-  "duration": 648362400,
+  "duration": 641278400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_enter_Playlists_details()"
+  "location": "AllTests.i_enter_Playlists_details()"
 });
 formatter.result({
-  "duration": 455898400,
+  "duration": 453949300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_can_create_an_Playlists_entry()"
+  "location": "AllTests.i_can_create_an_Playlists_entry()"
 });
 formatter.result({
-  "duration": 630709100,
+  "duration": 628910700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 563353400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 578166900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 590806500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 590169600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 581210600,
+  "duration": 580247500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5297572800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5321231500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5281038900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5327495100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5285409900,
+  "duration": 5460810600,
   "status": "passed"
 });
 formatter.background({
@@ -2855,24 +2305,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.navigate_to_the_login_page()"
+  "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 256332700,
+  "duration": 239609000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_enter_the_correct_details()"
+  "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 334615200,
+  "duration": 353805700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_is_logged_in()"
+  "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 14771200,
+  "duration": 7134900,
   "status": "passed"
 });
 formatter.scenario({
@@ -2894,57 +2344,25 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.i_can_access_the_Playlists_page()"
+  "location": "AllTests.i_can_access_the_Playlists_page()"
 });
 formatter.result({
-  "duration": 642877700,
+  "duration": 679879000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_can_read_all_the_Playlists_entries()"
+  "location": "AllTests.i_can_read_all_the_Playlists_entries()"
 });
 formatter.result({
-  "duration": 273473900,
+  "duration": 268066900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 565434000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 588477600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562233300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 586091600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 580691900,
+  "duration": 579825000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5317650700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5306786400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5331365100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5308502200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5341828900,
+  "duration": 5336220600,
   "status": "passed"
 });
 formatter.background({
@@ -2970,24 +2388,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.navigate_to_the_login_page()"
+  "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 269985800,
+  "duration": 325046200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_enter_the_correct_details()"
+  "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 351314900,
+  "duration": 341807400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_is_logged_in()"
+  "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 11738200,
+  "duration": 11291000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3014,64 +2432,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.i_can_access_the_Playlists_page()"
+  "location": "AllTests.i_can_access_the_Playlists_page()"
 });
 formatter.result({
-  "duration": 661291000,
+  "duration": 659507600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_click_on_view_one_Playlists()"
+  "location": "AllTests.i_click_on_view_one_Playlists()"
 });
 formatter.result({
-  "duration": 642970300,
+  "duration": 611071400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_can_read_that_Playlists_details()"
+  "location": "AllTests.i_can_read_that_Playlists_details()"
 });
 formatter.result({
-  "duration": 8944400,
+  "duration": 9181900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 567606400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574881300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 575039100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 591103500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 576615700,
+  "duration": 581518300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5341261400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5286331000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5316102000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5301119400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5307399000,
+  "duration": 5323274500,
   "status": "passed"
 });
 formatter.background({
@@ -3097,24 +2483,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.navigate_to_the_login_page()"
+  "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 238611400,
+  "duration": 261730600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_enter_the_correct_details()"
+  "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 355658100,
+  "duration": 377958600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_is_logged_in()"
+  "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 12199500,
+  "duration": 20710200,
   "status": "passed"
 });
 formatter.scenario({
@@ -3141,64 +2527,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.i_can_access_the_Playlists_view_one_page()"
+  "location": "AllTests.i_can_access_the_Playlists_view_one_page()"
 });
 formatter.result({
-  "duration": 712146100,
+  "duration": 688603200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_enter_new_Playlists_details()"
+  "location": "AllTests.i_enter_new_Playlists_details()"
 });
 formatter.result({
-  "duration": 592610800,
+  "duration": 575934900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_can_update_that_Playlists_entry()"
+  "location": "AllTests.i_can_update_that_Playlists_entry()"
 });
 formatter.result({
-  "duration": 884533900,
+  "duration": 632853900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 557061000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577956100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562689800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 588844700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 563417000,
+  "duration": 589523700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5322801300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5304204400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5310722400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5313681100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5270673900,
+  "duration": 5463709900,
   "status": "passed"
 });
 formatter.background({
@@ -3224,24 +2578,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.navigate_to_the_login_page()"
+  "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 246081400,
+  "duration": 241225300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_enter_the_correct_details()"
+  "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 406849300,
+  "duration": 400335400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_is_logged_in()"
+  "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 12219800,
+  "duration": 20131400,
   "status": "passed"
 });
 formatter.scenario({
@@ -3268,64 +2622,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.i_can_access_the_Playlists_view_one_page()"
+  "location": "AllTests.i_can_access_the_Playlists_view_one_page()"
 });
 formatter.result({
-  "duration": 691260100,
+  "duration": 669301900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_click_on_delete_Playlists_button()"
+  "location": "AllTests.i_click_on_delete_Playlists_button()"
 });
 formatter.result({
-  "duration": 4555814900,
+  "duration": 574202500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_can_delete_that_Playlists_entry()"
+  "location": "AllTests.i_can_delete_that_Playlists_entry()"
 });
 formatter.result({
-  "duration": 4639600,
+  "duration": 5865900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 568278800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 570219200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 563312900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 591067500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 576363900,
+  "duration": 588413300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5328037300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5338097700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5296048400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5280264400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5276006100,
+  "duration": 5327832500,
   "status": "passed"
 });
 formatter.background({
@@ -3351,24 +2673,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.navigate_to_the_login_page()"
+  "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 243518900,
+  "duration": 247947100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_enter_the_correct_details()"
+  "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 344750000,
+  "duration": 390915200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_is_logged_in()"
+  "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 13558500,
+  "duration": 5597500,
   "status": "passed"
 });
 formatter.scenario({
@@ -3395,65 +2717,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.i_can_access_the_Playlists_view_one_page()"
+  "location": "AllTests.i_can_access_the_Playlists_view_one_page()"
 });
 formatter.result({
-  "duration": 676015400,
+  "duration": 651798700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_click_on_a_linked_track()"
+  "location": "AllTests.i_click_on_a_linked_track()"
 });
 formatter.result({
-  "duration": 4604680700,
+  "duration": 615152200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.i_an_taken_to_that_tracks_page()"
+  "location": "AllTests.i_an_taken_to_that_tracks_page()"
 });
 formatter.result({
-  "duration": 9557900,
-  "error_message": "java.lang.AssertionError: expected:\u003ctrue\u003e but was:\u003cfalse\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepdef.Playlists.i_an_taken_to_that_tracks_page(Playlists.java:229)\r\n\tat ✽.Then i an taken to that tracks page(playlists.feature:45)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 568621600,
+  "duration": 8949200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 579153100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 576360500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 590239900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 572337200,
+  "duration": 591415900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5315045200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5331799000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5382546300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5314262500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5308941000,
+  "duration": 5346999700,
   "status": "passed"
 });
 formatter.background({
@@ -3479,24 +2768,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Playlists.navigate_to_the_login_page()"
+  "location": "AllTests.navigatec_to_the_login_page()"
 });
 formatter.result({
-  "duration": 233447600,
+  "duration": 245575100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_enter_the_correct_details()"
+  "location": "AllTests.userc_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 372717500,
+  "duration": 444801400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Playlists.user_is_logged_in()"
+  "location": "AllTests.userc_is_logged_in()"
 });
 formatter.result({
-  "duration": 23467000,
+  "duration": 20811600,
   "status": "passed"
 });
 formatter.scenario({
@@ -3522,36 +2811,29 @@ formatter.step({
   "name": "only that playlists details are displayed",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "AllTests.i_can_access_the_homepage()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 308892600,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "AllTests.i_search_for_a_playlist()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 334804600,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "AllTests.only_that_playlists_details_are_displayed()"
+});
 formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "duration": 584169800,
+  "duration": 8322100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 586333900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577165800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577855600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 571809600,
+  "duration": 582339700,
   "status": "passed"
 });
 formatter.uri("tracks.feature");
@@ -3569,23 +2851,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5305972500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5310759600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5313644700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5298597000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5361261000,
+  "duration": 5314891400,
   "status": "passed"
 });
 formatter.background({
@@ -3611,24 +2877,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.navigate_to_the_login_page()"
+  "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 261226400,
+  "duration": 242440300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_enter_the_correct_details()"
+  "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 363886000,
+  "duration": 332854700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_is_logged_in()"
+  "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 19272000,
+  "duration": 14459700,
   "status": "passed"
 });
 formatter.scenario({
@@ -3655,64 +2921,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.i_can_access_the_tracks_page_from_the_albums()"
+  "location": "AllTests.i_can_access_the_tracks_page_from_the_albums()"
 });
 formatter.result({
-  "duration": 1002980400,
+  "duration": 1009324600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_enter_tracks_details()"
+  "location": "AllTests.i_enter_tracks_details()"
 });
 formatter.result({
-  "duration": 2624497600,
+  "duration": 651451000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_can_create_an_tracks_entry()"
+  "location": "AllTests.i_can_create_an_tracks_entry()"
 });
 formatter.result({
-  "duration": 915816900,
+  "duration": 962259800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 575246200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 580163000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 576190900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574426700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577889600,
+  "duration": 610404800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5331211500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5339926300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5308489400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5306616100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5289371700,
+  "duration": 5325903200,
   "status": "passed"
 });
 formatter.background({
@@ -3738,24 +2972,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.navigate_to_the_login_page()"
+  "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 240314500,
+  "duration": 237630500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_enter_the_correct_details()"
+  "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 334421200,
+  "duration": 355628500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_is_logged_in()"
+  "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 15597800,
+  "duration": 6885600,
   "status": "passed"
 });
 formatter.scenario({
@@ -3777,57 +3011,25 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.i_can_access_the_tracks_page()"
+  "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 686288900,
+  "duration": 667198600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_can_read_all_the_tracks_entries()"
+  "location": "AllTests.i_can_read_all_the_tracks_entries()"
 });
 formatter.result({
-  "duration": 6544200,
+  "duration": 6064800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 578680100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 563292900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577042500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 562473100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574094800,
+  "duration": 568446700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5316709400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5337002100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5317467400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5278892700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5290429000,
+  "duration": 5328036500,
   "status": "passed"
 });
 formatter.background({
@@ -3853,24 +3055,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.navigate_to_the_login_page()"
+  "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 239448600,
+  "duration": 298525000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_enter_the_correct_details()"
+  "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 362222200,
+  "duration": 347538200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_is_logged_in()"
+  "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 15324200,
+  "duration": 24432200,
   "status": "passed"
 });
 formatter.scenario({
@@ -3897,64 +3099,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.i_can_access_the_tracks_page()"
+  "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 687616600,
+  "duration": 659817500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_click_on_view_one_tracks()"
+  "location": "AllTests.i_click_on_view_one_tracks()"
 });
 formatter.result({
-  "duration": 636097900,
+  "duration": 618577700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_can_read_that_tracks_details()"
+  "location": "AllTests.i_can_read_that_tracks_details()"
 });
 formatter.result({
-  "duration": 8362400,
+  "duration": 7622700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 563837100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 579993400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 590944200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 572343200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 561734400,
+  "duration": 577508800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5333532400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5327522400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5323585900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5400559300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5337197100,
+  "duration": 5345820100,
   "status": "passed"
 });
 formatter.background({
@@ -3980,24 +3150,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.navigate_to_the_login_page()"
+  "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 268121300,
+  "duration": 249136700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_enter_the_correct_details()"
+  "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 382670700,
+  "duration": 409814800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_is_logged_in()"
+  "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 23985900,
+  "duration": 23697700,
   "status": "passed"
 });
 formatter.scenario({
@@ -4024,64 +3194,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.i_can_access_the_tracks_page()"
+  "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 663508600,
+  "duration": 669385300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_enter_new_tracks_details()"
+  "location": "AllTests.i_enter_new_tracks_details()"
 });
 formatter.result({
-  "duration": 1218840400,
+  "duration": 1221027700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_can_update_that_tracks_entry()"
+  "location": "AllTests.i_can_update_that_tracks_entry()"
 });
 formatter.result({
-  "duration": 635594600,
+  "duration": 647216100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 567646800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 578332400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 592719700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 574637800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577944800,
+  "duration": 585517900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5304187000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5305516900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5274179500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5329059900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5296609700,
+  "duration": 5335420800,
   "status": "passed"
 });
 formatter.background({
@@ -4107,24 +3245,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.navigate_to_the_login_page()"
+  "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 255852800,
+  "duration": 249759000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_enter_the_correct_details()"
+  "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 363185500,
+  "duration": 335277000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_is_logged_in()"
+  "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 11831400,
+  "duration": 6031300,
   "status": "passed"
 });
 formatter.scenario({
@@ -4151,64 +3289,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.i_can_access_the_tracks_page()"
+  "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 674712100,
+  "duration": 678532800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_click_on_delete_tracks_button()"
+  "location": "AllTests.i_click_on_delete_tracks_button()"
 });
 formatter.result({
-  "duration": 921972800,
+  "duration": 950159400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_can_delete_that_tracks_entry()"
+  "location": "AllTests.i_can_delete_that_tracks_entry()"
 });
 formatter.result({
-  "duration": 5451600,
+  "duration": 6282500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 560483600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 565846500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 593426800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 572956800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 564263000,
+  "duration": 595081700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5307790100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5323722900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5293678800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5417826000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5288501000,
+  "duration": 5420775800,
   "status": "passed"
 });
 formatter.background({
@@ -4234,24 +3340,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.navigate_to_the_login_page()"
+  "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 249286300,
+  "duration": 235671500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_enter_the_correct_details()"
+  "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 419922000,
+  "duration": 360287500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_is_logged_in()"
+  "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 20601000,
+  "duration": 14077800,
   "status": "passed"
 });
 formatter.scenario({
@@ -4278,64 +3384,32 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.i_can_access_the_tracks_page()"
+  "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 712141900,
+  "duration": 674631800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_click_on_a_album_in_that_track()"
+  "location": "AllTests.i_click_on_a_album_in_that_track()"
 });
 formatter.result({
-  "duration": 997652800,
+  "duration": 939502800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_am_taken_to_that_albums_page()"
+  "location": "AllTests.i_am_taken_to_that_albums_page()"
 });
 formatter.result({
-  "duration": 8558900,
+  "duration": 8715400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 571023600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 577790900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 585608400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 586154700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 570564600,
+  "duration": 582035600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5319009300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5329758900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5284962500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5312510800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5321799200,
+  "duration": 5318176700,
   "status": "passed"
 });
 formatter.background({
@@ -4361,24 +3435,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.navigate_to_the_login_page()"
+  "location": "AllTests.navigateb_to_the_login_page()"
 });
 formatter.result({
-  "duration": 294598200,
+  "duration": 243136600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_enter_the_correct_details()"
+  "location": "AllTests.userb_enter_the_correct_details()"
 });
 formatter.result({
-  "duration": 400049500,
+  "duration": 346220300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.user_is_logged_in()"
+  "location": "AllTests.userb_is_logged_in()"
 });
 formatter.result({
-  "duration": 22587700,
+  "duration": 19741600,
   "status": "passed"
 });
 formatter.scenario({
@@ -4405,44 +3479,28 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Tracks.i_can_access_the_tracks_page()"
+  "location": "AllTests.i_can_access_the_tracks_page()"
 });
 formatter.result({
-  "duration": 711751100,
+  "duration": 687133900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.i_search_for_a_track()"
+  "location": "AllTests.i_search_for_a_track()"
 });
 formatter.result({
-  "duration": 410494200,
+  "duration": 337088900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Tracks.only_that_tracks_details_are_displayed()"
+  "location": "AllTests.only_that_tracks_details_are_displayed()"
 });
 formatter.result({
-  "duration": 9948900,
+  "duration": 8432900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 595535900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 580034500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 591719700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 579763600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 564196000,
+  "duration": 589799200,
   "status": "passed"
 });
 });
