@@ -45,6 +45,6 @@ Background:
   
     Given I can access the genres view one page    
     When I click on a track in that genre  
-    Then i am taken to that tracks page 
+    Then i am taken to that tracks pagea 
     
   

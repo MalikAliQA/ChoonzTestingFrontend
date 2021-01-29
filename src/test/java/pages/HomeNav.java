@@ -14,6 +14,8 @@ public class HomeNav {
 	public static final String GenreURL = "http://localhost:8082/html/genres.html";
 	public static final String PlaylistURL = "http://localhost:8082/html/playlists.html";
 	public static final String TracksURL = "http://localhost:8082/html/tracks.html";
+	public static final String LogoutURL = "http://localhost:8082/login?logout";
+	public static final String RegURL = "http://localhost:8082/register.html";
 	
 	
 	@FindBy(css = "#nav > div > ul > li:nth-child(2) > a")

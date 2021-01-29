@@ -11,7 +11,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+	<classpathentry excluding="stepdef/Albums.java|stepdef/Artists.java|stepdef/Genres.java|stepdef/Playlists.java|stepdef/RegLoginLogout.java|stepdef/Tracks.java" kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
