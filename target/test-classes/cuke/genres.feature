@@ -2,6 +2,12 @@
 Feature: genres Page
 
 
+Background: 
+		Given navigated to the login page
+		When userd enter the correct details
+		Then userd is logged in
+
+
 
   Scenario: Create genres
   
@@ -16,7 +22,7 @@ Feature: genres Page
     
     Scenario: Read One genres
   
-    Given I can access the genres page    
+    Given I can access the genres page   
     When I click on view one genres 
     Then i can read that genres details  
     
@@ -30,6 +36,15 @@ Feature: genres Page
  
   Scenario: Delete genres
   
-    Given I can access the genres page    
+    Given I can access the genres view one page   
     When I click on delete genres button 
     Then i can delete that genres entry 
+    
+    
+ Scenario: View track linked to genre
+  
+    Given I can access the genres view one page    
+    When I click on a track in that genre  
+    Then i am taken to that tracks page 
+    
+  

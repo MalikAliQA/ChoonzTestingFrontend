@@ -18,6 +18,9 @@ public class createGenre {
 	@FindBy(css = "#main > div:nth-child(1) > input[type=button]")
 	WebElement viewone;
 	
+	@FindBy(css = "#search")
+	WebElement search;
+	
 	
 	
 	public void createAGenre(String name, String description) {

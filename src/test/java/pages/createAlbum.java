@@ -6,28 +6,36 @@ import org.openqa.selenium.support.FindBy;
 public class createAlbum {
 	
 	
-	@FindBy(css = "#name")
+	@FindBy(css = "#albumName")
 	WebElement albumname;
 
-	@FindBy(css = "#cover") 
+	@FindBy(css = "#albumCover") 
 	WebElement albumcover;
 	
-	@FindBy(css = "#artistid")
-	WebElement artistid;
-	
-	@FindBy(css = "#create")
+	@FindBy(css = "#createAlbum")
 	WebElement createalbum;
 	
 	@FindBy(css = "#\\31  > input[type=button]")
 	WebElement viewone;
 	
+	@FindBy(css = "#\\32  > input[type=button]")
+	WebElement viewtwo;
+	
+	@FindBy(css = "#search")
+	WebElement search;
 	
 	
-	public void createAnAlbum(String name, String cover, int artist) {
+	
+	
+	
+	public void createAnAlbum(String name, String cover) {
 		albumname.sendKeys(name);
 		albumcover.sendKeys(cover);
-		artistid.sendKeys(String.valueOf(artist));
-		//createalbum.click();
+	}
+	
+	public void searchAnAlbum(String name) {
+		search.sendKeys(name);
+		
 	}
 	
 	public void createclick() {
@@ -38,6 +46,11 @@ public class createAlbum {
 	public void viewclick() {
 
 		viewone.click();
+	}
+	
+	public void viewtwoclick() {
+
+		viewtwo.click();
 	}
 	
 

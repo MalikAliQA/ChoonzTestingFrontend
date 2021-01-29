@@ -5,17 +5,23 @@ import org.openqa.selenium.support.FindBy;
 
 public class updateAlbum {
 	
-	@FindBy(css = "#name")
+	@FindBy(css = "#albumName")
 	WebElement albumname;
 
-	@FindBy(css = "#cover") 
+	@FindBy(css = "#albumCover") 
 	WebElement albumcover;
 	
-	@FindBy(css = "#update")
+	@FindBy(css = "#updateAlbum")
 	WebElement updatealbum;
 	
-	@FindBy(css = "#main > div > button")
+	@FindBy(css = "#delete")
 	WebElement delete;
+	
+	@FindBy(css = "#artistID-2")
+	WebElement artislink;
+	
+	@FindBy(css = "#tracks > div:nth-child(1) > input[type=button]")
+	WebElement tracklink;
 	
 	
 	public void updateanAlbum(String name, String cover) {
@@ -34,6 +40,16 @@ public class updateAlbum {
 	public void deleteclick() {
 
 		delete.click();
+	}
+	
+	public void artistclick() {
+
+		artislink.click();
+	}
+	
+	public void trackclick() {
+
+		tracklink.click();
 	}
 
 }

@@ -12,7 +12,15 @@ public class createArtist {
 	WebElement createartist;
 	
 	@FindBy(css = "#main > div:nth-child(1) > input[type=button]")
+	
 	WebElement viewone;
+	
+	
+	@FindBy(css = "#search")
+	WebElement search;
+	
+	
+
 	
 	
 	
@@ -30,6 +38,10 @@ public class createArtist {
 	public void viewclick() {
 
 		viewone.click();
+	}
+	
+	public void searchartist(String name) {
+		search.sendKeys(name);
 	}
 	
 	

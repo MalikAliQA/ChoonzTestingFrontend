@@ -26,7 +26,10 @@ public class updateTrack {
 	@FindBy(css = "#update")
 	WebElement updatetrack;
 	
-	@FindBy(css = "#main > div > button")
+	@FindBy(css = "#main > div > a > h2")
+	WebElement albumlink;
+	
+	@FindBy(css = "#delete")
 	WebElement delete;
 
 	
@@ -38,13 +41,7 @@ public class updateTrack {
 		trackduration.sendKeys(String.valueOf(duration));
 		tracklyrics.clear();
 		tracklyrics.sendKeys(lyrics);
-//		albumsid.clear();
-//		albumsid.sendKeys(String.valueOf(albumID));
-//		genresid.clear();
-//		genresid.sendKeys(String.valueOf(genreID));
-//		playlistsid.clear();
-//		playlistsid.sendKeys(String.valueOf(playlistID));
-		//createalbum.click();
+
 	}
 	
 	public void updateclick() {
@@ -55,6 +52,11 @@ public class updateTrack {
 	public void deleteclick() {
 
 		delete.click();
+	}
+	
+	public void albumlinkclick() {
+
+		albumlink.click();
 	}
 	
 	
