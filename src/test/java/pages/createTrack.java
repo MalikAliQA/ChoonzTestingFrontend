@@ -5,41 +5,39 @@ import org.openqa.selenium.support.FindBy;
 
 public class createTrack {
 	
-	@FindBy(css = "#name")
+	@FindBy(css = "#trackName")
 	WebElement trackname;
 
-	@FindBy(css = "#duration") 
+	@FindBy(css = "#trackDuration") 
 	WebElement trackduration;
 	
-	@FindBy(css = "#lyrics")
+	@FindBy(css = "#trackLyrics")
 	WebElement tracklyrics;
 	
-	@FindBy(css = "#albumId")
-	WebElement albumsid;
 	
-	@FindBy(css = "#genreId")
-	WebElement genresid;
-	
-	@FindBy(css = "#playlistId")
-	WebElement playlistsid;
-	
-	@FindBy(css = "#create")
-	WebElement createtrack;
-	
-	@FindBy(css = "#test > input[type=button]")
-	WebElement viewone;
+	@FindBy(css = "#search")
+	WebElement search;
 
 	
+	@FindBy(css = "#createTrack")
+	WebElement createtrack;
 	
-	public void createATrack(String name, int duration, String lyrics, int albumID, int genreID, int playlistID) {
+	@FindBy(css = "#main > div:nth-child(1) > input[type=button]")
+	WebElement viewone;
+	
+	
+	public void createATrack(String name, int duration, String lyrics) {
 		trackname.sendKeys(name);
 		trackduration.sendKeys(String.valueOf(duration));
 		tracklyrics.sendKeys(lyrics);
-		albumsid.sendKeys(String.valueOf(albumID));
-		genresid.sendKeys(String.valueOf(genreID));
-		playlistsid.sendKeys(String.valueOf(playlistID));
-		//createalbum.click();
+
 	}
+	
+	public void searchATrack(String name) {
+		search.sendKeys(name);
+		
+	}
+	
 	
 	public void createclick() {
 

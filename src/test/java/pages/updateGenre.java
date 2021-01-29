@@ -17,6 +17,11 @@ public class updateGenre {
 	@FindBy(css = "#main > div > button")
 	WebElement delete;
 	
+	@FindBy(css = "#tracks > div:nth-child(1) > input[type=button]")
+	WebElement tracklink;
+	
+	
+	
 	
 	public void updateaGenre(String name, String description) {
 		genrename.clear();
@@ -34,6 +39,11 @@ public class updateGenre {
 	public void deleteclick() {
 
 		delete.click();
+	}
+	
+	public void trackclick() {
+
+		tracklink.click();
 	}
 
 }

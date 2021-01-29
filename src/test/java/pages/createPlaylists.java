@@ -17,11 +17,12 @@ public class createPlaylists {
 	@FindBy(css = "#create")
 	WebElement create;
 	
-	@FindBy(css = "#\\31  > input[type=button]")
+	@FindBy(css = "#main > div:nth-child(1) > input[type=button]")	
 	WebElement viewone;
 	
-	@FindBy(css = "#main > div:nth-child(1) > button")
-	WebElement delete;
+	@FindBy(css = "#main > div:nth-child(3) > input[type=button]")	
+	WebElement viewtwo;
+
 	
 	
 	public void createAPlaylist(String name, String description, String artwork) {
@@ -41,9 +42,10 @@ public class createPlaylists {
 		viewone.click();
 	}
 	
-	public void deleteclick() {
+	public void viewtwoclick() {
 
-		delete.click();
+		viewtwo.click();
 	}
-
+	
+	
 }
